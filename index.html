@@ -8,11 +8,17 @@
     <header class="main-header">
         <a href="img/logo.jpg">Техномарт</a>
         <ul class="user-navigation">
-            <li class="search-form"> <img src="img/icon-search.svg" alt="" width="15" height="15"> Поиск</li>
-            <li> <img src="img/icon-bookmark.svg" alt="Закладки" width="15" height="15">Закладки:0</li>
-            <li> <img src="img/cart-icon.svg" alt="Корзина" width="15" height="15">Корзина:0</li>
-            <li>Оформить заказ</li>
-          </ul>
+            <li>
+              <form>
+                <img src="img/icon-search.svg" alt="">
+                <input type="search" placeholder="Поиск:">
+                
+              </form>
+            </li>
+            <li><button><img src="img/icon-bookmark.svg" width="15" height="15" alt="Закладки">Закладки:0 </button></li>
+            <li> <button><img src="img/cart-icon.svg" alt="Корзина" width="15" height="15">Корзина:0</button> </li>
+            <li><button>Оформить заказ</button> </li>
+        </ul>
           <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
           <address>
             <ul>
@@ -21,8 +27,8 @@
             </ul>
           </address>
           <ul class="user-area">
-              <li class="link"><img src="img/icon-login.svg" alt="Войти" width="20" height=""> Войти </li>
-              <li class="reg">Регистрация</li>
+              <li class="link"><button><img src="img/icon-login.svg" alt="Войти" width="20" height="">Войти</button>   </li>
+              <li class="reg"><button>Регистрация</button> </li>
           </ul>
           <nav class="main-nav">
             <ul>
@@ -50,7 +56,8 @@
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
-      <a class="button" href="company.html">Подробнее о компани</a>
+      
+      <button>Подробнее о компани</button>
     </section>
 
     <section class="contacts">
@@ -91,7 +98,20 @@
             <li><a href="discounts.html">Спецпредложения</a></li>
           </ul>
     </nav> 
-
+    <form action="https://echo.htmlacademy.ru" method="post" class="" id="auth">
+        
+       
+        <label for="user_name">Ваше имя:</label><br>
+       <input type="text" id="user_name" name="user_name" placeholder="Представьтесь, пожалуйста" autofocus form="auth"><br>
+       
+       <label for="address">Ваш e-mail:</label><br>
+        <input type="email"  placeholder="адрес" form="auth" id="address" name="address"><br>
+        
+        <label for="some_text">Текст письма:</label><br>
+        <textarea id="some_text" name="some_text" cols="30" rows="10" form="auth" ></textarea><br>
+        <!-- <button type="submit" form="auth">Отправить</button> -->
+        <input type="submit" value="Отправить">
+      </form>
       <footer>
         <p class="copyright">
           2010-2017 Компания "Техномарт"<br>

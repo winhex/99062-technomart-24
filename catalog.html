@@ -9,11 +9,17 @@
     <header class="main-header">
       <a href="img/logo.jpg">Техномарт</a>
       <ul class="user-navigation">
-        <li class="search-form"><img src="img/icon-search.svg" alt="" width="15" height="15">Поиск</li>
-          <li><img src="img/icon-bookmark.svg" alt="Закладки" width="15" height="15"> Закладки:0</li>
-          <li> <img src="img/cart-icon.svg" alt="Корзина" width="15" height="15">Корзина:0</li>
-          <li>Оформить заказ</li>
-        </ul>
+          <li>
+            <form>
+              <img src="img/icon-search.svg" alt="">
+              <input type="search" placeholder="Поиск:">
+              
+            </form>
+          </li>
+          <li><button><img src="img/icon-bookmark.svg" width="15" height="15" alt="Закладки">Закладки:0 </button></li>
+          <li> <button><img src="img/cart-icon.svg" alt="Корзина" width="15" height="15">Корзина:10</button> </li>
+          <li><button>Оформить заказ</button> </li>
+      </ul>
         <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <address>
           <ul>
@@ -22,9 +28,9 @@
           </ul>
         </address>
         <ul class="user-area">
-          <li class="login"> <img src="img/icon-user.svg" alt=""> Равшан Джамшутович <img src="img/icon-logout.svg" alt=""></li>
-          <li class="orders">Мои заказы</li>
-          <li class="private">Личный кабинет</li>
+          <li class="login"> <button><img src="img/icon-user.svg" alt=""> Равшан Джамшутович <img src="img/icon-logout.svg" alt=""></button> </li>
+          <li class="orders"> <a href="#">Мои заказы</a></li>
+          <li class="private"><a href="#">Личный кабинет</a> </li>
         </ul>
         <nav class="main-nav">
           <ul>
@@ -175,6 +181,13 @@
         <a href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </footer>   
-  
+    <div class="modal">
+        <span class="modal-close">×</span>
+        <div class="modal-title">Заголовок</div>
+        <div class="modal-btns">
+          <button type="button" class="btn">Оформить заказ</button>
+          <button type="button" class="btn btn--white">Продолжить покупки</button>
+        </div>
+    </div>
 </body>
 </html>

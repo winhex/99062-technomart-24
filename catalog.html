@@ -8,30 +8,28 @@
     
     <header class="main-header">
       <a href="img/logo.jpg">Техномарт</a>
-      <ul class="user-navigation">
-          <li>
+      <div class="user-navigation">
             <form>
               <img src="img/icon-search.svg" alt="">
               <input type="search" placeholder="Поиск:">
-              
             </form>
-          </li>
-          <li><button><img src="img/icon-bookmark.svg" width="15" height="15" alt="Закладки">Закладки:0 </button></li>
-          <li> <button><img src="img/cart-icon.svg" alt="Корзина" width="15" height="15">Корзина:10</button> </li>
-          <li><button>Оформить заказ</button> </li>
-      </ul>
+              <button><img src="img/icon-bookmark.svg" width="15" height="15" alt="Закладки">Закладки:0 </button>
+              <button><img src="img/cart-icon.svg" alt="Корзина" width="15" height="15">Корзина:10</button>
+              <button>Оформить заказ</button>
+      </div>
+      
         <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-        <address>
-          <ul>
-            <li class="main-phone"> <img src="img/icon-phone.svg" alt="">+7(812)555-05-55</li>
-            <li class="main-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
-          </ul>
-        </address>
-        <ul class="user-area">
-          <li class="login"> <button><img src="img/icon-user.svg" alt=""> Равшан Джамшутович <img src="img/icon-logout.svg" alt=""></button> </li>
-          <li class="orders"> <a href="#">Мои заказы</a></li>
-          <li class="private"><a href="#">Личный кабинет</a> </li>
-        </ul>
+        
+            <address>
+                <p class="main-phone"><img src="img/icon-phone.svg" alt=""> +7(812)555-05-55</p>
+                <p class="main-phone">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            </address>
+            
+            <div class="user-area">
+                <button><img src="img/icon-user.svg" alt=""> Равшан Джамшутович <img src="img/icon-logout.svg" alt=""></button><br>
+                <a href="#">Мои заказы </a> <a href="#">Личный кабинет</a>
+            </div>
+        
         <nav class="main-nav">
           <ul>
             <li><a href="#">Главная</a></li>
@@ -50,22 +48,31 @@
                 <p><img src="img/icon-home.svg" alt=""> <img src="img/icon-right-small.svg" alt=""> КАТАЛОГ <img src="img/icon-right-small.svg" alt=""> Инструмент <img src="img/icon-right-small.svg" alt=""> Перфораторы </p>
         </div>
         <span ><h1>Перфораторы</h1> </span>
-        <aside class="checklist">
-           <h3>Производители:</h3>
-            <ul>
-                <li><img src="img/checkbox-on.svg" alt=""> Bosh</li>
-                <li><img src="img/checkbox-off.svg" alt="">Интерскол</li>
-                <li><img src="img/checkbox-on.svg" alt="">Makita</li>
-                <li><img src="img/checkbox-off.svg" alt="">Dewalt</li>
-                <li><img src="img/checkbox-off.svg" alt="">HITACHI</li>
-           </ul>     
-           <h3>Питание:</h3>
-           <ul>
-                <li><img src="img/radio-on.svg" alt=""> Аккумуляторные</li>
-                <li><img src="img/radio-off.svg" alt=""> Сетевые</li>
-           </ul>
+        <aside>
+            <form action="https://echo.htmlacademy.ru" method="post" class="" id="brand">
+       
+              <label for="brand-item">Производители:</label><br>
+                  <input id="brand-item" type="checkbox" name="brand-item" form="brand" value="BOSH">BOSH <br>
+                  <input id="brand-item" type="checkbox" name="brand-item" form="brand" value="Interskol">Интерскол<br>
+                  <input id="brand-item" type="checkbox" name="brand-item" form="brand" value="Makita">Makita <br>
+                  <input id="brand-item" type="checkbox" name="brand-item" form="brand" value="Dewalt">Dewalt <br>
+                  <input id="brand-item" type="checkbox" name="brand-item" form="brand" value="HITACHI">HITACHI <br>
+              
+              <label for="brand-power">Питание:</label> <br>
+              <input id="brand-power" form="brand"  checked type="radio" name="brand-power" value="battery" checked>Аккумуляторные
+              <br>
+              <input id="brand-power" form="brand" type="radio" name="brand-power"  value="wired">Сетевые <br>
+              <button type="submit" form="brand">Отправить</button>
+            </form> 
         </aside>
-
+        
+        <div class="sorting">
+          <p>Сортировка</p> <a href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По функционалу</a>
+          <a href=""></a>
+          <a href=""></a>
+        </div>
         <section class="catalog">
             <figure class="catalog-item">
               <img src="img/bfg-3000.jpg" alt="">
@@ -166,11 +173,11 @@
         Все права защищены
       </p>
       <div class="footer-social">
-        <ul>
-            <li><button><img src="img/vk-icon.svg" alt="">Вконтакте</button></li>
-            <li><button><img src="img/fb-icon.svg" alt="">Фейсбук</button></li>
-            <li><button><img src="img/insta-icon.svg" alt="">Инстаграм</button></li>
-        </ul>
+          
+          <button><img src="img/vk-icon.svg" alt="">Вконтакте</button>
+          <button><img src="img/fb-icon.svg" alt="">Фейсбук</button>
+          <button><img src="img/insta-icon.svg" alt="">Инстаграм</button>
+        
       </div>
       <p class="footer-feedback">
           <b>Обратная связь:</b> 

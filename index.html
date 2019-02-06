@@ -7,29 +7,25 @@
   <body>
     <header class="main-header">
         <a href="img/logo.jpg">Техномарт</a>
-        <ul class="user-navigation">
-            <li>
+        <nav class="user-nav">
               <form>
                 <img src="img/icon-search.svg" alt="">
                 <input type="search" placeholder="Поиск:">
-                
               </form>
-            </li>
-            <li><button><img src="img/icon-bookmark.svg" width="15" height="15" alt="Закладки">Закладки:0 </button></li>
-            <li> <button><img src="img/cart-icon.svg" alt="Корзина" width="15" height="15">Корзина:0</button> </li>
-            <li><button>Оформить заказ</button> </li>
-        </ul>
+            <button><img src="img/icon-bookmark.svg" width="15" height="15" alt="Закладки">Закладки:0 </button>
+            <button><img src="img/cart-icon.svg" alt="Корзина" width="15" height="15">Корзина:0</button> 
+            <button>Оформить заказ</button>
+        </nav>
           <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
           <address>
-            <ul>
-              <li class="main-phone"> <img src="img/icon-phone.svg" alt=""> +7(812)555-05-55</li>
-              <li class="main-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
-            </ul>
+            <p class="main-phone"><img src="img/icon-phone.svg" alt=""> +7(812)555-05-55</p>
+            <p class="main-phone">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </address>
-          <ul class="user-area">
-              <li class="link"><button><img src="img/icon-login.svg" alt="Войти" width="20" height="">Войти</button>   </li>
-              <li class="reg"><button>Регистрация</button> </li>
-          </ul>
+          <div class="user-area">
+              <button><img src="img/icon-login.svg" alt="Войти" width="20" height="">Войти</button>
+              <button>Регистрация</button>
+          </div>
+          
           <nav class="main-nav">
             <ul>
               <li><a href="#">Главная</a></li>
@@ -70,12 +66,9 @@
     
         <a href="img/logo.jpg">Техномарт</a>
         <address>
-            <ul>
-              <li>+7(812)555-05-55</li>
-              <li>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
-            </ul>
+             <p>+7(812)555-05-55 </p> 
+             <p> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </address>
-         
     </section>
     
        
@@ -109,25 +102,25 @@
         
         <label for="some_text">Текст письма:</label><br>
         <textarea id="some_text" name="some_text" cols="30" rows="10" form="auth" ></textarea><br>
-        <!-- <button type="submit" form="auth">Отправить</button> -->
-        <input type="submit" value="Отправить">
-      </form>
+        <button type="submit" form="auth">Отправить</button>
+        <!-- <input type="submit" value="Отправить"> -->
+    </form>
       <footer>
         <p class="copyright">
           2010-2017 Компания "Техномарт"<br>
           Все права защищены
         </p>
         <div class="footer-social">
-          <ul>
-            <li><button><img src="img/vk-icon.svg" alt="">Вконтакте</button></li>
-            <li><button><img src="img/fb-icon.svg" alt="">Фейсбук</button></li>
-            <li><button><img src="img/insta-icon.svg" alt="">Инстаграм</button></li>
-          </ul>
+          
+            <button><img src="img/vk-icon.svg" alt="">Вконтакте</button>
+            <button><img src="img/fb-icon.svg" alt="">Фейсбук</button>
+            <button><img src="img/insta-icon.svg" alt="">Инстаграм</button>
+          
         </div>
         <p class="footer-feedback">
             <b>Обратная связь:</b> 
             <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </p>
+        </p>
         <p class="footer-developer">
           <b>Разработано:</b> 
           <a href="https://htmlacademy.ru">HTML Academy</a>

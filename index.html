@@ -6,12 +6,12 @@
   <title>HTML Academy: Техномарт</title>
 </head>
 
-<body>
+<body class="b-main-page">
   <header class="b-header">
 
     <section class="b-order">
-      <a class="b-logo header-logo" alt="Логотип" href="index.html">
-        Техномарт
+      <a class="b-logo header-logo" alt="" href="index.html">
+         <img src="img/logo.svg" alt="Техномарт" width="110" height="18">
       </a>
       <form class="b-search" action="https://echo.htmlacademy.ru" method="post">
         <input class="b-search-input" type="search" name="search-form" placeholder="Поиск:" aria-label="Поиск">
@@ -23,6 +23,7 @@
 
     </section>
     <section class="b-user-area">
+        <h2 class="visually-hidden">Личный кабинет</h2>
       <div class="b-user-area__bookmarks">
         <a class="b-user-area__link" href="#" title="Закладки">
           Закладки:
@@ -40,9 +41,10 @@
 
     <section class="b-about">
       <h1 class="b-about__title">
-        Интернет-магазин строительных материалов и инструментов для ремонта
+        Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта
       </h1>
       <address class="b-about__contacts">
+        <h2 class="visually-hidden">Контакты</h2>
         <a class="b-about__phone" href="tel:+78125550555" aria-label="Номер телефона">
           +7(812)555-05-55
         </a>
@@ -51,6 +53,7 @@
         </p>
       </address>
       <section class="b-user-area user-unsigned">
+        <h2 class="visually-hidden">Меню пользователя</h2>
         <a class="b-about__sign-in-btn" href="sign-in.html" title="Войти">
           Войти
         </a>
@@ -105,6 +108,7 @@
   </header>
   <main class="b-goods">
     <section class="b-goods__menu">
+      <h2 class="visually-hidden">Наши предложения</h2>
       <div class="b-goods__item">
         <h3 class="b-goods__title">Материалы</h3>
 
@@ -399,7 +403,7 @@
   <footer class="b-footer">
 
     <a class="b-logo footer-logo" href="#">
-      Техномарт
+      <img src="img/footer-logo.svg" alt="Техномарт">
     </a>
 
     <address class="b-contacts">

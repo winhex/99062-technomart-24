@@ -27,7 +27,8 @@
   html {
     box-sizing: border-box;
   }
-.b-main-page {
+.b-main-page,
+.b-inner-page {
     margin: 0;
     padding: 0;
     font-family: 'Cuprum', Arial, sans-serif;
@@ -154,7 +155,10 @@ a {
   color: #ffffff;
 }
 
-.b-nav__list {
+.b-nav__list,
+.b-user-area__list,
+.b-crumbs
+.b-catalog__list {
   list-style: none;
 }
 
@@ -389,9 +393,10 @@ a {
   color: #000000;
 }
 .b-about__title {
-  font-size: 30px;
-	line-height: 30px;
-	text-transform: uppercase;
+  font-size: 16px;
+	line-height: 23px;
+  color: #ee3643;
+  
 }
 
 .b-about__merits {
@@ -428,6 +433,12 @@ a {
   color: #ffffff;
   background-color: #ee3643;
   text-transform: uppercase;
+}
+
+.b-about__phone {
+  font-size: 21px;
+  color: #e9292a;
+  font-size: 21px;
 }
 /* Контакты */
 

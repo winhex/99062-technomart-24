@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,6 +15,7 @@
 
   
   <header class="b-header">
+    <div class="container">
     <section class="b-order">
       <a class="b-logo header-logo" alt="" href="index.html">
         <img class="b-logo__img" src="img/logo.svg" alt="Логотип Техномарт">
@@ -27,20 +28,21 @@
 
     </section>
     <section class="b-user-area">
-      <div class="b-user-area__bookmarks">
-        <a class="b-user-area__link" href="#" title="Закладки">
-          Закладки:
+      
+        <a class="b-bookmarks__btn b-user-area-btn" href="#" title="Закладки">
+          <span class="b-user-area__text">Закладки:</span> 
         </a>
-      </div>
-      <div class="b-user-area__basket">
-        <a class="b-user-area__basket-btn" href="#" title="Корзина">
-          Корзина:
+      
+      
+        <a class="b-basket-btn b-user-area-btn" href="#" title="Корзина">
+          <span class="b-user-area__text">Корзина: 10</span> 
         </a>
-        <a class="b-user-area__order-btn" href="order-form.html" title="Оформить заказ">
-          Оформить заказ
+        <a class="b-order-btn b-user-area-btn" href="order-form.html" title="Оформить заказ">
+          <span class="b-user-area__text">Оформить заказ</span> 
         </a>
-      </div>
+      
     </section>
+  </div>
   </div>
   <div class="header-middle">
     <section class="b-about">
@@ -55,21 +57,22 @@
       </address>
     </section>
     <section class="b-user-area user-signed">
-
+     <div class="header-user-info">
       <a class="b-user-area__btn" href="profile.html" title="Равшан Джамшутович">
-        Равшан Джамшутович
+        <span class="b-user-area__user-name">Равшан Джамшутович</span> 
       </a>
       <a class="b-user-area__sign-out" href="sign-out.html" title="Выйти">
 
       </a>
+      </div>
       <ul class="b-user-area__list">
         <li class="b-user-area__items">
-          <a class="b-user-area__orders" href="#" title="Мои заказы">
+          <a class="b-user-area__link" href="#" title="Мои заказы">
             Мои заказы
           </a>
         </li>
         <li class="b-user-area__sign-in">
-          <a href="#" title="Личный кабинет">
+          <a class="b-user-area__link" href="#" title="Личный кабинет">
             Личный кабинет
           </a>
         </li>
@@ -106,22 +109,22 @@
   <main class="b-main">
     <ul class="b-crumbs">
       <li class="b-crumbs__item">
-        <a href="index.html" class="bcrumbs__link" title="Главная">
+        <a class="b-crumbs__link b-crumbs__main" href="index.html" class="bcrumbs__link" title="Главная">
 
         </a>
       </li>
       <li class="b-crumbs__item">
-        <a href="#" class="bcrumbs__link" title="Каталог">
+        <a class="b-crumbs__link" href="#" class="bcrumbs__link" title="Каталог">
           Каталог
         </a>
       </li>
       <li class="b-crumbs__item">
-        <a href="#" class="bcrumbs__link" title="Инструмент">
+        <a class="b-crumbs__link" href="#" class="bcrumbs__link" title="Инструмент">
           Инструмент
         </a>
       </li>
       <li class="b-crumbs__item">
-        <a href="#" class="bcrumbs__link" title="Перфораторы">
+        <a class="b-crumbs__link b-crumbs__active" href="#" class="bcrumbs__link" title="Перфораторы">
           Перфораторы
         </a>
       </li>

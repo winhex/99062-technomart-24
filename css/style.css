@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
 	font-family: "Cuprum";
   src: url("../fonts/Cuprum-Regular.woff") format("woff"),
       url("../fonts/Cuprum-Regular.woff2") format("woff2"),
@@ -19,7 +19,7 @@
 	    
 	font-weight: normal;
 	font-style: normal;
-} */
+} 
 *, *::before, *::after {
     box-sizing: inherit;
   }
@@ -33,7 +33,6 @@
     padding: 0;
     font-family: 'Cuprum', Arial, sans-serif;
     color:white;
-    max-width: 1200px;
     margin: 0 auto;
     font-size: 18px;
     line-height: 24px;
@@ -46,6 +45,7 @@
 
 a {
     text-decoration: none;
+    font-style: normal;
     
   }
 
@@ -66,21 +66,38 @@ a {
   .button:active {
     background-color: #ba2732;
   }
+  /* .container {
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+  } */
 
+  .header-middle {
+     background-color: #f4f7f9;
+  }
 
 .header-top,
 .header-bottom {
     background-color:#293449; 
-    color: #ffffff;  
+    color: #ffffff;
+                                           /* позиционирование хедера */
+    display: flex;
+    position: relative;
+    padding-left: 230px;
+    min-height: 42px;
+    align-self: stretch;  
 }
 
-.b-user-area__link,
-.b-basket__btn,
-.b-basket__order-btn {
+
+.b-basket__btn {
   color: #ffffff;
 }
 
-
+.b-user-area__user-name {
+  font-size: 21px;
+  color: #000000;
+  /* font-style: normal; */
+}
 
 /* .header-top .b-search-input:focus {
 	background-color: #ffffff;
@@ -100,6 +117,23 @@ a {
 .b-logo__img {
   width: 111px;
   height: 18px;
+}
+
+.header-logo {
+  display: block;
+  width: 220px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+                                                         /* Позиционирование логотипа */
+  position: absolute;
+	top: 0;
+	left: 10px;
+	padding-left: 55px;
+	padding-right: 55px;
+	padding-top: 13px;
+	padding-bottom: 16px;
+  width: 220px;
+  height: 47px;
 }
 
 .header-logo:hover {
@@ -396,6 +430,7 @@ a {
   font-size: 16px;
 	line-height: 23px;
   color: #ee3643;
+
   
 }
 
@@ -496,3 +531,171 @@ a {
   color: #ffd180;
 }
 /* футер */
+
+
+/* каталог */
+.b-about__address {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  color: #32425c;
+}
+
+.header-middle {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  font-weight: normal;
+  color: #ee3643;
+  width: 196px;
+}
+
+.b-user-area__link {
+  font-size: 16px;
+  color: #32425c;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.b-user-area__link:hover {
+  color: #ee3643;
+
+}
+
+.b-search-input {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  outline: none;
+
+  width: 270px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 49px;
+
+  background-image: url("../img/icon-search-gray.svg"); 
+  background-repeat: no-repeat;
+  background-position: 17px 12px;
+
+}
+
+.b-search-btn {
+  display: none;
+}
+
+.b-search-input:hover {
+  background-color: #212a3a;
+	background-image: url("../img/icon-search-light.svg"); 
+  background-repeat: no-repeat;
+  background-position: 17px 12px;
+}
+
+.b-search-input:focus {
+  background-color: #ffffff;
+	color: #000000;
+	background-image: url("../img/icon-search-red.svg"); 
+  background-repeat: no-repeat;
+  background-position: 17px 12px;
+}
+
+.b-user-area-btn {
+  display: inline-block;
+  width: 150px;
+}
+
+
+.b-user-area__text {
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  vertical-align: bottom;
+  color: #ffffff;
+  
+}
+
+.b-user-area-btn:hover {
+  background-color: #212a3a;
+}
+
+.b-user-area-btn:active {
+  background-color: #161d29;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.header-user-info {
+
+}
+
+                                /* Кнопка "оформить заказ" */
+ .b-order-btn {
+  background-color: #63a63e;
+  
+
+}
+.b-order-btn:hover {
+  background-color: #5fbb2d;
+
+}
+.b-order-btn:active {
+  background-color: #518534;
+	color: rgba(255, 255, 255, 0.5);
+}
+                                
+                                /* Кнопка "оформить заказ" */
+.b-basket-btn {
+  background-color: #ee3643;
+}
+
+                                 /* хлебные крошки */
+.b-crumbs {
+  list-style: none;
+}
+.b-crumbs__item {
+  display: inline-block;
+  font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #000000;
+	text-transform: uppercase;
+}
+  .b-crumbs__link {
+  display: block;
+}
+.b-user-area__btn::before  {
+  background-image: url("../img/icon-home.svg"); 
+  background-repeat: no-repeat;  
+} 
+                                /* хлебные крошки */
+
+.b-main__title {
+  font-size: 30px;
+	line-height: 30px;
+	color: #32425c;
+	text-transform: uppercase;
+	font-weight: normal;
+	background-color: #f2f6f8;
+}
+
+
+                                  /* фильтр */
+.b-filter__title,
+.b-catalog__sort-title,
+.b-catalog__sort-btn,
+.b-filter__btn,
+.b-switch__btn {
+  font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #000000;
+	text-transform: uppercase;
+	font-weight: normal;
+
+}
+
+.b-filter__title,
+.b-catalog__sort {
+  background-color: #f7f3ec;
+
+}
+
+/* каталог */

@@ -533,7 +533,7 @@ a {
 /* футер */
 
 
-/* каталог */
+/* catalog.html */
 .b-about__address {
   font-size: 14px;
   font-weight: normal;
@@ -698,4 +698,99 @@ a {
 
 }
 
-/* каталог */
+                                 /* фильтр */
+
+
+
+/* каталог товаров */
+
+.b-catalog__item {
+  display: block;
+  border: 1px solid #eaeaea;
+  font-family: "PT Sans", Arial, sans-serif;
+	text-align: center;
+	font-weight: bold;
+	width: 25%;
+	max-width: 220px;
+
+}
+
+.b-catalog__item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+	border: 1px solid transparent;
+}
+
+.b-catalog__item:active {
+  opacity: 0.3;
+	box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+	border: 1px solid transparent;
+
+}
+
+.b-catalog__title {
+  font-size: 18px;
+	line-height: 20px;
+	color: #000000;
+}
+
+.b-catalog__old-price {
+  font-size: 17px;
+	line-height: 18px;
+	color: #a9a9a9;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
+
+.b-catalog__new-price {
+  font-size: 17px;
+	line-height: 18px;
+	color: #ffffff;
+
+	background-color: #ee3643;
+	background-image: url("../img/btn-price.svg");
+	background-position: 0 0;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+}
+
+.b-hidden-form__buy,
+.b-hidden-form__bookmark {
+  font-family: "Cuprum", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.b-hidden-form__buy {
+  color: #ffffff;
+	background-color: #63a63e;
+	box-shadow: inset 0px -3px 0 0 #367315;
+
+}
+.b-hidden-form__buy:hover,
+.b-hidden-form__buy:focus {
+  background-color: #5fbb2d;
+
+}
+
+.b-hidden-form__buy:active {
+  background-color: #518534;
+	box-shadow: none;
+}
+
+.b-hidden-form__bookmark {
+  color: #32425c;
+	border: 3px solid #63a63e;
+}
+
+.b-hidden-form__bookmark:hover,
+.b-hidden-form__bookmark:focus {
+  border: 3px solid #32425c;
+}
+
+.b-hidden-form__bookmark:active {
+  opacity: 0.3;
+}
+
+/* каталог товаров */

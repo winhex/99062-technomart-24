@@ -4,9 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic"rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -121,316 +120,320 @@
     <!-- </div> -->
   </header>
   <main class="b-main">
-    <div class="wrapper"> 
-    <section class="b-goods__menu">
-      <div class="b-goods-top">
-        <h2 class="visually-hidden">Наши предложения</h2>
-        <div class="b-goods__item item-materials">
-          <h3 class="b-goods__title">Материалы</h3>
+    <div class="wrapper">
+      <section class="b-goods__menu">
+        <div class="b-goods-top">
+          <h2 class="visually-hidden">Наши предложения</h2>
+          <div class="b-goods__item item-materials">
+            <h3 class="b-goods__title">Материалы</h3>
 
-          <a class="b-goods__btn" href="materials.html" title="Материалы">На любой вкус</a>
+            <a class="b-goods__btn" href="materials.html" title="Материалы">На любой вкус</a>
 
-        </div>
-        <div class="b-goods__item item-tools">
-          <h3 class="b-goods__title">Инструмент</h3>
-
-          <a class="b-goods__btn" href="tools.html" title="Инструмент">На все случаи</a>
-        </div>
-        <div class="b-goods__item item-technics">
-          <h3 class="b-goods__title">Техника</h3>
-
-          <a class="b-goods__btn" href="technics.html" title="Техника">Для стройки</a>
-        </div>
-      </div>
-      <div class="b-goods-center">
-        <div class="b-goods-right">
-          <div class="b-goods__item item-discount">
-            <h3 class="b-goods__title">Скидки 50%</h3>
-
-            <a class="b-goods__btn" href="sales.html" title="Скидки 50%">На 350 товаров</a>
           </div>
-          <div class="b-goods__item item-delivery">
-            <h3 class="b-goods__title">Доставка</h3>
-            <a class="b-goods__btn" href="delivery.html" title="Доставка">Бесплатно</a>
+          <div class="b-goods__item item-tools">
+            <h3 class="b-goods__title">Инструмент</h3>
+
+            <a class="b-goods__btn" href="tools.html" title="Инструмент">На все случаи</a>
+          </div>
+          <div class="b-goods__item item-technics">
+            <h3 class="b-goods__title">Техника</h3>
+
+            <a class="b-goods__btn" href="technics.html" title="Техника">Для стройки</a>
           </div>
         </div>
+        <div class="b-goods-center">
+          <div class="b-goods-right">
+            <div class="b-goods__item item-discount">
+              <h3 class="b-goods__title">Скидки 50%</h3>
 
-        <!-- Слайдер -->
-        <section class="b-slider">
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <input type="radio" id="btn-2" name="toggle">
-          <div class="b-slider__controls">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-          </div>
-          <button class="b-slider__arrows arrow-left" for="btn-1"></button>
-          <button class="b-slider__arrows arrow-right" for="btn-2"></button>
-          <div class="b-slider__slides">
-            <div class="b-slider__slide">
-              <div class="b-slider__slide--text">
-                <h3 class="b-slider__slide--title">Перфораторы</h3>
-                <p class="b-slider__slide-description">Настоящие мужские игрушки</p>
-                <a class="b-slider__btn" href="catalog.html">Открыть каталог</a>
-              </div>
+              <a class="b-goods__btn" href="sales.html" title="Скидки 50%">На 350 товаров</a>
             </div>
-            <div class="b-slider__slide">
-              <div class="b-slider__slide--text">
-                <h3 class="b-slider__slide--title">Дрели</h3>
-                <p class="b-slider__slider--description">Соседям на радость!</p>
-                <a class="b-slider__btn" href="catalog-drill.html">Открыть каталог</a>
-              </div>
+            <div class="b-goods__item item-delivery">
+              <h3 class="b-goods__title">Доставка</h3>
+              <a class="b-goods__btn" href="delivery.html" title="Доставка">Бесплатно</a>
             </div>
           </div>
-          
-        </section>
-      </div>
-      <!-- Конец слайдера -->
-    </section>
 
-    <!-- Популярные товары -->
-    <section class="b-catalog ">
-      <div class="b-top">
-        <h2 class="b-popular__title">Популярные товары:</h2>
-        <a class="b-popular__btn" href="#" title="">Все популярные товары</a>
-      </div>
-      <ul class="b-popular__list">
-        <li class="b-popular__item">
-          <a class="b-popular__item-title" href="catalog-item.html" title="Перфоратор BOSCH BFG 9000">Перфоратор BOSCH
-            BFG 9000</a>
-          <a href="catalog-item.html" class="b-popular__item-image">
-            <img src="img/product-3.jpg" alt="Перфоратор BOSCH BFG 9000">
-          </a>
-          <p class="b-popular__old-price">32500 р.</p>
-          <a href="catalog-item.html" class="b-popular__new-price" title="25500 р.">25500 р.</a>
-          <div class="b-popular__form-hidden">
-            <a class="b-popular__form-btn" href="#" title="Купить">Купить</a>
-            <a class="b-popular__form-btn" href="#" title="В закладки">В закладки</a>
-          </div>
-        </li>
-        <li class="b-popular__item">
-          <a class="b-popular__item-title" href="catalog-item.html" title="Перфоратор BOSCH BFG 3000">Перфоратор BOSCH
-            BFG 3000</a>
-          <a class="b-popular__item-image" href="catalog-item.html">
-            <img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 3000">
-          </a>
-          <p class="b-popular__old-price">22500 р.</p>
-          <a href="catalog-item.html" class="b-popular__new-price" title="15500 р.">15500 р.</a>
-          <div class="catalog-user-form-hidden">
-            <a class="b-popular__form-btn" href="#" title="Купить">Купить</a>
-            <a class="b-popular__form-btn" href="#" title="В закладки">В закладки</a>
-          </div>
-        </li>
-        <li class="b-popular__item">
-          <a class="b-popular__item-title" href="catalog-item.html" title="Перфоратор BOSCH BFG 6000">Перфоратор BOSCH
-            BFG 6000</a>
-          <a class="b-popular__item-image" href="catalog-item.html">
-            <img src="img/product-2.jpg" alt="Перфоратор BOSCH BFG 6000">
-          </a>
-          <p class="b-popular__old-price">30500 р.</p>
-          <a class="b-popular__new-price" href="catalog-item.html" title="25500 р.">25500 р.</a>
-          <div class="b-popular__form-hidden">
-            <a class="b-popular__form-btn" href="#" title="Купить">Купить</a>
-            <a class="b-popular__form-btn" href="#" title="В закладки">В закладки</a>
-          </div>
-        </li>
-        <li class="b-popular__item">
-          <a class="b-popular__item-title" href="catalog-item.html" title="Перфоратор BOSCH BFG 6000">Перфоратор BOSCH
-            BFG 2000</a>
-          <a class="b-popular__item-image" href="catalog-item.html">
-            <img src="img/product-2.jpg" alt="Перфоратор BOSCH BFG 2000">
-          </a>
+          <!-- Слайдер -->
+          <section class="b-slider">
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-2" name="toggle">
+            <div class="b-slider__controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+            </div>
+            <button class="b-slider__arrows arrow-left" for="btn-1"></button>
+            <button class="b-slider__arrows arrow-right" for="btn-2"></button>
+            <div class="b-slider__slides">
+              <div class="b-slider__slide">
+                <div class="b-slider__slide--text">
+                  <h3 class="b-slider__slide--title">Перфораторы</h3>
+                  <p class="b-slider__slide-description">Настоящие мужские игрушки</p>
+                  <a class="b-slider__btn" href="catalog.html">Открыть каталог</a>
+                </div>
+              </div>
+              <div class="b-slider__slide">
+                <div class="b-slider__slide--text">
+                  <h3 class="b-slider__slide--title">Дрели</h3>
+                  <p class="b-slider__slider--description">Соседям на радость!</p>
+                  <a class="b-slider__btn" href="catalog-drill.html">Открыть каталог</a>
+                </div>
+              </div>
+            </div>
 
-          <a class="b-popular__new-price" href="catalog-item.html" title="12500 р.">12500 р.</a>
-          <div class="b-popular__form-hidden">
-            <a class="b-popular__form-btn" href="#" title="Купить">Купить</a>
-            <a class="b-popular__form-btn" href="#" title="В закладки">В закладки</a>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <!-- Популярные товары - конец -->
-
-    <!-- Популярные брэнды -->
-    <section class="b-brands">
-      <div class="b-brands__top">
-        <h2 class="b-brands__title">Популярные производители:</h2>
-        <a class="b-brands__btn" href="#" title="Все производители">Все производители</a>
-      </div>
-      <ul class="b-brands__list">
-        <li class="b-brands__item">
-          <a href="#" title="Bosch" class="b-brands__link">
-            <img class="b-brands__img" src="img/bosch.jpg" alt="Bosch">
-          </a>
-        </li>
-        <li class="b-brands__item">
-          <a href="#" title="Makita" class="b-brands__link">
-            <img class="b-brands__img" src="img/makita.jpg" alt="Makita">
-          </a>
-        </li>
-        <li class="b-brands__item">
-          <a href="#" title="De-walt" class="b-brands__link">
-            <img class="b-brands__img" src="img/dewalt.jpg" alt="De-walt">
-          </a>
-        </li>
-        <li class="b-brands__item">
-          <a href="#" title="Интерскол" class="b-brands__link">
-            <img class="b-brands__img" src="img/interskol.jpg" alt="Интерскол">
-          </a>
-        </li>
-        <li class="b-brands__item">
-          <a href="#" title="Hitachi" class="b-brands__link">
-            <img class="b-brands__img" src="img/hitachi.jpg" alt="Hitachi">
-          </a>
-        </li>
-        <li class="b-brands__item">
-          <a href="#" title="LG" class="b-brands__link">
-            <img class="b-brands__img" src="img/lg.jpg" alt="LG">
-          </a>
-        </li>
-        <li class="b-brands__item">
-          <a href="#" title="AEG" class="b-brands__link">
-            <img class="b-brands__img" src="img/aeg.jpg" alt="AEG">
-          </a>
-        </li>
-        <li class="b-brands__item">
-          <a href="#" title="Metabo" class="b-brands__link">
-            <img class="b-brands__img" src="img/metabo.jpg" alt="Metabo">
-          </a>
-        </li>
-      </ul>
-    </section>
-  </div>
- <!-- контейнер -->
-    <!-- Популярные брэнды - конец -->
-  
-
-  <section class="b-service">
-    <div class="container">
-      <div class="b-service__header">
-        <h2 class="b-service__title">
-          Сервисы
-        </h2>
-        <p class="b-service__text">
-          Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся
-          изо всех сил, чтобы сделать ваши покупки приятными.
-        </p>
-      </div>
-
-      <ul class="b-service__list">
-        <div class="b-service__stripe">
+          </section>
         </div>
-        <li class="b-service__item">
-          <input type="radio" id="delivery">
-          <label class="b-service__label" for="delivery">
-            Доставка
-          </label>
-          <div class="b-service__slide">
-            <h3 class="visually-hidden">
-              Доставка
-            </h3>
-            <p class="b-slide__title">Доставка</p>
-            <p class="b-slide__text b-slide__delivery">
-              <!--  Посмотреть имя класса -->
-              Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! <br>
-              Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!
-            </p>
+        <!-- Конец слайдера -->
+      </section>
 
-          </div>
-        </li>
-        <li class="b-service__item">
-          <input type="radio" id="warranty">
-          <label class="b-service__label" for="warranty">
-            Гарантия
-          </label>
-          <div class="b-service__slide">
-            <h3 class="visually-hidden">
-              Гарантия
-            </h3>
-            <p class="b-slide__title">
-              Гарантия
-            </p>
-            <p class="b-slide__text b-slide__warranty">
-              <!--  Посмотреть имя класса -->
-              Если купленный у нас товар поломается или заискрит, <br> а также в случае пожара, спровоцированного его
-              возгаранием, <br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем <br> сгоревший товар на
-              новый. <br>
-              Дом уж восстановите как-нибудь сами.
-            </p>
+      <!-- Популярные товары -->
+      <section class="b-catalog ">
+        <div class="b-top">
+          <h2 class="b-brands__title">Популярные товары:</h2>
+          <a class="b-popular__btn" href="#" title="">Все популярные товары</a>
+        </div>
+        <ul class="b-popular__list">
+          <li class="b-popular__item">
+            <a href="catalog-item.html" class="b-popular__image">
+              <img src="img/product-3.jpg" alt="Перфоратор BOSCH BFG 9000">
+            </a>
+            <a class="b-popular__title" href="catalog-item.html" title="Перфоратор BOSCH BFG 9000">Перфоратор BOSCH
+              BFG 9000</a>
 
-          </div>
-        </li>
-        <li class="b-service__item">
-          <input type="radio" id="credit">
-          <label class="b-service__label" for="credit">
-            Кредит
-          </label>
-          <div class="b-service__slide">
-            <h3 class="visually-hidden">
-              Кредит
-            </h3>
-            <p class="b-slide__title">
-              Кредит
-            </p>
-            <p class="b-slide__text b-slide__credit">
-              Залезть в долговую яму стало проще! <br> Кредитные консультанты придут вам на помощь.
-            </p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <div class="container">
-    <div class="about-content">
-      <section class="b-about">
-
-        <h3 class="b-about__title">
-          Компания «Техномарт»
-        </h3>
-        <p class="b-about__merits">
-          Настоящий мужской шоппинг начинатся здесь! Огромный выбор товаров для ремонта и <br>
-          строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-        </p>
-        <p class="b-about__merits">
-          Мы можем доставить ваш товар в самые отдаленные точки России!
-        </p>
-        <p class="b-about__merits">
-          Техномарт работает со многими транспортными компаниями:
-        </p>
-        <ul class="b-about__partners">
-          <li class="b-about__item">
-            Деловые линии
+            <p class="b-popular__old-price">32500 р.</p>
+            <a href="catalog-item.html" class="b-popular__new-price" title="25500 р.">25500 р.</a>
+            <div class="b-popular__form-hidden">
+              <a class="b-popular__form-btn" href="#" title="Купить">Купить</a>
+              <a class="b-popular__form-btn" href="#" title="В закладки">В закладки</a>
+            </div>
           </li>
-          <li class="b-about__item">
-            Автотрейдинг
+          <li class="b-popular__item">
+            <a class="b-popular__image" href="catalog-item.html">
+              <img src="img/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000">
+            </a>
+            <a class="b-popular__title" href="catalog-item.html" title="Перфоратор BOSCH BFG 3000">Перфоратор BOSCH
+              BFG 3000</a>
+
+            <p class="b-popular__old-price">22500 р.</p>
+            <a href="catalog-item.html" class="b-popular__new-price" title="15500 р.">15500 р.</a>
+            <div class="catalog-user-form-hidden">
+              <a class="b-popular__form-btn" href="#" title="Купить">Купить</a>
+              <a class="b-popular__form-btn" href="#" title="В закладки">В закладки</a>
+            </div>
           </li>
-          <li class="b-about__item">
-            ЖелДорЭкспедиция
+          <li class="b-popular__item">
+            <a class="b-popular__image" href="catalog-item.html">
+              <img src="img/bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000">
+            </a>
+            <a class="b-popular__title" href="catalog-item.html" title="Перфоратор BOSCH BFG 6000">Перфоратор BOSCH
+              BFG 6000</a>
+
+            <p class="b-popular__old-price">30500 р.</p>
+            <a class="b-popular__new-price" href="catalog-item.html" title="25500 р.">25500 р.</a>
+            <div class="b-popular__form-hidden">
+              <a class="b-popular__form-btn" href="#" title="Купить">Купить</a>
+              <a class="b-popular__form-btn" href="#" title="В закладки">В закладки</a>
+            </div>
+          </li>
+          <li class="b-popular__item">
+            <a class="b-popular__image" href="catalog-item.html">
+              <img src="img/bfg-6000.jpg" alt="Перфоратор BOSCH BFG 2000">
+            </a>
+            <a class="b-popular__title" href="catalog-item.html" title="Перфоратор BOSCH BFG 6000">Перфоратор BOSCH
+              BFG 2000</a>
+
+
+            <a class="b-popular__new-price" href="catalog-item.html" title="12500 р.">12500 р.</a>
+            <div class="b-popular__form-hidden">
+              <a class="b-popular__form-btn" href="#" title="Купить">Купить</a>
+              <a class="b-popular__form-btn" href="#" title="В закладки">В закладки</a>
+            </div>
           </li>
         </ul>
-
-        <a class="b-about__btn" href="about.html" title="Подробнее о компании">
-          Подробнее о компании
-        </a>
-
       </section>
+      <!-- Популярные товары - конец -->
 
-      <section class="b-contacts">
-        <h3 class="b-contacts__title">
-          Контакты
-        </h3>
-        <p class="b-contacts__text">
-          Вы можете забрать товар сами, <br> заехав в наш офис.
-        </p>
-        <a class="b-contacts__map" href="#">
-          <img src="img/map.jpg" alt="Карта">
-        </a>
-        <a class="b-contacts__btn" href="contacts.html" title="Напишите нам!">
-          Заблудились? Напишите нам!
-        </a>
+      <!-- Популярные брэнды -->
+      <section class="b-brands">
+        <div class="b-brands__top">
+          <h2 class="b-brands__title">Популярные производители:</h2>
+          <a class="b-brands__btn" href="#" title="Все производители">Все производители</a>
+        </div>
+        <ul class="b-brands__list">
+          <li class="b-brands__item">
+            <a href="#" title="Bosch" class="b-brands__link">
+              <img class="b-brands__img" src="img/bosch.jpg" alt="Bosch">
+            </a>
+          </li>
+          <li class="b-brands__item">
+            <a href="#" title="Makita" class="b-brands__link">
+              <img class="b-brands__img" src="img/makita.jpg" alt="Makita">
+            </a>
+          </li>
+          <li class="b-brands__item">
+            <a href="#" title="De-walt" class="b-brands__link">
+              <img class="b-brands__img" src="img/dewalt.jpg" alt="De-walt">
+            </a>
+          </li>
+          <li class="b-brands__item">
+            <a href="#" title="Интерскол" class="b-brands__link">
+              <img class="b-brands__img" src="img/interskol.jpg" alt="Интерскол">
+            </a>
+          </li>
+          <li class="b-brands__item">
+            <a href="#" title="Hitachi" class="b-brands__link">
+              <img class="b-brands__img" src="img/hitachi.jpg" alt="Hitachi">
+            </a>
+          </li>
+          <li class="b-brands__item">
+            <a href="#" title="LG" class="b-brands__link">
+              <img class="b-brands__img" src="img/lg.jpg" alt="LG">
+            </a>
+          </li>
+          <li class="b-brands__item">
+            <a href="#" title="AEG" class="b-brands__link">
+              <img class="b-brands__img" src="img/aeg.jpg" alt="AEG">
+            </a>
+          </li>
+          <li class="b-brands__item">
+            <a href="#" title="Metabo" class="b-brands__link">
+              <img class="b-brands__img" src="img/metabo.jpg" alt="Metabo">
+            </a>
+          </li>
+        </ul>
       </section>
     </div>
-  </div>
-</main>
+    <!-- контейнер -->
+    <!-- Популярные брэнды - конец -->
+
+
+    <section class="b-service">
+      <div class="container">
+        <div class="b-service__header">
+          <h2 class="b-service__title">
+            Сервисы
+          </h2>
+          <p class="b-service__text">
+            Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся
+            изо всех сил, чтобы сделать ваши покупки приятными.
+          </p>
+        </div>
+
+        <ul class="b-service__list">
+          <div class="b-service__stripe">
+          </div>
+          <li class="b-service__item">
+            <input type="radio" id="delivery">
+            <label class="b-service__label" for="delivery">
+              Доставка
+            </label>
+            <div class="b-service__slide">
+              <h3 class="visually-hidden">
+                Доставка
+              </h3>
+              <p class="b-slide__title">Доставка</p>
+              <p class="b-slide__text b-slide__delivery">
+                <!--  Посмотреть имя класса -->
+                Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! <br>
+                Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!
+              </p>
+
+            </div>
+          </li>
+          <li class="b-service__item">
+            <input type="radio" id="warranty">
+            <label class="b-service__label" for="warranty">
+              Гарантия
+            </label>
+            <div class="b-service__slide">
+              <h3 class="visually-hidden">
+                Гарантия
+              </h3>
+              <p class="b-slide__title">
+                Гарантия
+              </p>
+              <p class="b-slide__text b-slide__warranty">
+                <!--  Посмотреть имя класса -->
+                Если купленный у нас товар поломается или заискрит, <br> а также в случае пожара, спровоцированного его
+                возгаранием, <br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем <br> сгоревший товар на
+                новый. <br>
+                Дом уж восстановите как-нибудь сами.
+              </p>
+
+            </div>
+          </li>
+          <li class="b-service__item">
+            <input type="radio" id="credit">
+            <label class="b-service__label" for="credit">
+              Кредит
+            </label>
+            <div class="b-service__slide">
+              <h3 class="visually-hidden">
+                Кредит
+              </h3>
+              <p class="b-slide__title">
+                Кредит
+              </p>
+              <p class="b-slide__text b-slide__credit">
+                Залезть в долговую яму стало проще! <br> Кредитные консультанты придут вам на помощь.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="container">
+      <div class="about-content">
+        <section class="b-about">
+
+          <h3 class="b-about__title">
+            Компания «Техномарт»
+          </h3>
+          <p class="b-about__merits">
+            Настоящий мужской шоппинг начинатся здесь! Огромный выбор товаров для ремонта и <br>
+            строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+          </p>
+          <p class="b-about__merits">
+            Мы можем доставить ваш товар в самые отдаленные точки России!
+          </p>
+          <p class="b-about__merits">
+            Техномарт работает со многими транспортными компаниями:
+          </p>
+          <ul class="b-about__partners">
+            <li class="b-about__item">
+              Деловые линии
+            </li>
+            <li class="b-about__item">
+              Автотрейдинг
+            </li>
+            <li class="b-about__item">
+              ЖелДорЭкспедиция
+            </li>
+          </ul>
+
+          <a class="b-about__btn" href="about.html" title="Подробнее о компании">
+            Подробнее о компании
+          </a>
+
+        </section>
+
+        <section class="b-contacts">
+          <h3 class="b-contacts__title">
+            Контакты
+          </h3>
+          <p class="b-contacts__text">
+            Вы можете забрать товар сами, <br> заехав в наш офис.
+          </p>
+          <a class="b-contacts__map" href="#">
+            <img src="img/map.jpg" alt="Карта">
+          </a>
+          <a class="b-contacts__btn" href="contacts.html" title="Напишите нам!">
+            Заблудились? Напишите нам!
+          </a>
+        </section>
+      </div>
+    </div>
+  </main>
   <footer class="b-footer">
 
     <div class=" container">
@@ -548,10 +551,10 @@
             </p>
 
           </li>
-          <li class="b-feedback__item" >
-            
+          <li class="b-feedback__item">
+
             <p class="b-feedback__text">
-                Разработано: <br>
+              Разработано: <br>
               <a class="b-feedback__link" href="https://htmlacademy.ru" title="https://htmlacademy.ru">
                 htmlacademy.ru
               </a>

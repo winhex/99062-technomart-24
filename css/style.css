@@ -503,6 +503,7 @@
      width: 100%;
      background-color: #f4f7f9;
      font-family: "Cuprum", Arial, sans-serif;
+     padding-top: 68px;
  }
 
  .service-container {
@@ -881,15 +882,7 @@ padding-bottom: 11px; */
      text-transform: uppercase;
  }
 
- /* .b-crumbs__main {
-    content: "";
-    display: inline-block;
-    background-image: url("../img/icon-home.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-
-} */
+ 
 
  .b-crumbs__item:not(:last-child)::after {
      content: "";

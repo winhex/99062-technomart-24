@@ -1,26 +1,5 @@
- /* font-face {
-	font-family: "Cuprum";
-    src: url("../fonts/Cuprum-Regular.woff") format("woff"),
-      url("../fonts/Cuprum-Regular.woff2") format("woff2"),
-      url("../fonts/Cuprum-Regular.svg") format("svg"),
-	  url("../fonts/Cuprum-Regular.ttf") format("truetype");
-	    
-	    
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "PT Sans";
-    src: url("../fonts/PTSans-Regular.woff") format("woff"),
-	     url("../fonts/PT_Sans-Web-Regular.woff2") format("woff2"),
-         url("../fonts/PTSans-Regular.svg") format("svg"),
-	     url("../fonts/PT_Sans-Web-Regular.ttf") format("truetype");
-	    
-	font-weight: normal;
-	font-style: normal;
-}   */
-                                                                   /* глобальные стили */
+ 
+/*                                                         глобальные стили */
 
 html {
     box-sizing: border-box;
@@ -30,15 +9,22 @@ html {
     box-sizing: inherit;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
     position: absolute;
-    clip: rect(0 0 0 0);
+  
     width: 1px;
     height: 1px;
     margin: -1px;
-}
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
-.container {
+.container,
+.wrapper {
     width: 960px;
     padding: 0 10px;
     margin: 0 auto;
@@ -49,9 +35,9 @@ html {
     padding: 0;
 }
 
-/* .b-main-page {
+ .b-main-page {
     font-family: "Cuprum", Arial, sans-serif;
-} */
+} 
 
 /*                                                                  глобальные стили */
 
@@ -77,12 +63,8 @@ html {
     margin-bottom: 46px;
 }
 
-.header-top__container {
+.header-top {
     display: flex;
-    height: 45px;
-    width: 960px;
-    padding: 0 10px;
-    margin: 0 auto;
     justify-content: space-between;
 }
 
@@ -188,19 +170,19 @@ html {
     font-family: 'Cuprum', Arial, sans-serif;
 }
 
-.header-middle__container {
+.header-middle {
     display: flex;
     align-items: center;
     justify-content: space-between;
     /* padding-top: 46px;
 padding-bottom: 43px;
 padding-left: 53px; */
-    width: 960px;
-    padding: 0 10px;
+    /* width: 960px;
+    padding: 0 10px; */
     /* padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 10px; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .b-about {}
@@ -210,7 +192,9 @@ padding-left: 53px; */
     font-size: 16px;
     font-weight: normal;
     font-style: italic;
+    line-height: 23px;
     color: #ee3643;
+    width: 196px;
 }
 
 .b-about__phone {
@@ -271,11 +255,7 @@ padding-left: 53px; */
     color: #32425c;
 }
 
-.b-nav__container {
-    width: 960px;
-    padding: 0 10px;
-    margin: 0 auto;
-}
+
 
 .b-nav__list {
     display: flex;
@@ -295,10 +275,10 @@ padding-left: 53px; */
     /* text-align: center; */
 }
 
-.header-container {
+/* .header-container {
     display: flex;
     flex-direction: column;
-}
+} */
 
 .header-bottom {
     background-color: #32425c;
@@ -312,15 +292,7 @@ padding-left: 53px; */
 
 /*                                                        каталог товаров */
 
-.main-container {
-    width: 960px;
-    padding: 0 10px;
-    margin: 0 auto;
-    font-family: "Cuprum", Arial, sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
-}
+
 
 .b-goods-top {
     display: flex;
@@ -541,12 +513,13 @@ padding-left: 53px; */
     width: 100%;
     background-color: #f4f7f9;
     font-family: "Cuprum", Arial, sans-serif;
+    padding-top: 68px;
 }
 
-.service-container {
-    width: 940px;
-    margin: 0 auto;
-    padding-top: 68px;
+
+
+.b-service__header {
+    width: 400px;
 }
 
 .b-service__title {
@@ -563,6 +536,7 @@ padding-left: 53px; */
     font-size: 13px;
     line-height: 24px;
     color: #000000;
+
 }
 
 .b-service__list {
@@ -622,7 +596,7 @@ padding-left: 53px; */
 
 /*                                                               о компании */
 
-.about-container {
+.about-content {
     display: flex;
     justify-content: space-between;
     padding-top: 82px;

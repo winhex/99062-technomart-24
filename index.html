@@ -321,70 +321,50 @@
             изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
         </div>
-
-        <ul class="b-service__list">
-          <!-- <div class="b-service__stripe"> -->
-
-          <li class="b-service__item">
-            <input type="radio" id="delivery">
-            <label class="b-service__label" for="delivery">
-              Доставка
-            </label>
-            <div class="b-service__slide">
-              <h3 class="visually-hidden">
+      <div class="service-list">
+        <ul class="b-service__buttons">
+          <li><button class="b-service__button button--active" name="button-delivery" type="button" >Доставка</button> </li>
+          <li><button class="b-service__button" name="button-warranty" type="button" >Гарантия</button> </li>
+          <li><button class="b-service__button" name="button-credit" type="button" >Кредит</button> </li>
+        </ul>
+      
+        <ul class="b-service__slides">
+          <li class="b-service__slide service__slide--active slide--delivery">
+              <h3 class="b-slide__title">
                 Доставка
               </h3>
-              <p class="b-slide__title">Доставка</p>
-              <p class="b-slide__text b-slide__delivery">
-                <!--  Посмотреть имя класса -->
-                Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! <br>
-                Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!
+              <p class="b-slide__text">
+                Мы с удовольствием доставим ваш товар прямо
+                к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем,
+                поднимая его на ваш этаж!
               </p>
 
-            </div>
           </li>
-          <li class="b-service__item">
-            <input type="radio" id="warranty">
-            <label class="b-service__label" for="warranty">
-              Гарантия
-            </label>
-            <div class="b-service__slide">
-              <h3 class="visually-hidden">
+          <li class="b-service__slide slide--warranty">
+              <h3 class="b-slide__title">
                 Гарантия
               </h3>
-              <p class="b-slide__title">
-                Гарантия
-              </p>
-              <p class="b-slide__text b-slide__warranty">
-                <!--  Посмотреть имя класса -->
-                Если купленный у нас товар поломается или заискрит, <br> а также в случае пожара, спровоцированного его
-                возгаранием, <br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем <br> сгоревший товар на
-                новый. <br>
+              <p class="b-slide__text">
+                Если купленный у нас товар поломается или заискрит,
+                а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
                 Дом уж восстановите как-нибудь сами.
               </p>
-
-            </div>
           </li>
-          <li class="b-service__item">
-            <input type="radio" id="credit">
-            <label class="b-service__label" for="credit">
-              Кредит
-            </label>
-            <div class="b-service__slide">
-              <h3 class="visually-hidden">
+          <li class="b-service__slide slide--credit">
+              <h3 class="b-slide__title">
                 Кредит
               </h3>
-              <p class="b-slide__title">
-                Кредит
+              <p class="b-slide__text">
+                Залезть в долговую яму стало проще!
+                Кредитные консультанты придут вам на помощь.
               </p>
-              <p class="b-slide__text b-slide__credit">
-                Залезть в долговую яму стало проще! <br> Кредитные консультанты придут вам на помощь.
-              </p>
-            </div>
+              <a href="#" class="b-warranty__button">
+                Отправить заявку
+              </a>
           </li>
         </ul>
       </div>
-
     </section>
     <div class="container">
       <div class="about-content">

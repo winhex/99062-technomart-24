@@ -192,7 +192,7 @@ opacity: 0.3;
     color: #ffffff;
     border: none;
     outline: none;
-    /* width: 270px; */
+    width: 270px;
     padding-top: 13px;
     padding-bottom: 13px;
     padding-left: 49px;
@@ -842,6 +842,14 @@ margin-bottom: 8px;
 
 /*                                                                  сервисы */
 
+.service-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 67px;
+    /* padding-bottom: 99px; */
+    min-width: 261px;
+}
+
 .b-service {
     width: 100%;
     background-color: #f4f7f9;
@@ -849,7 +857,11 @@ margin-bottom: 8px;
     padding-top: 68px;
 }
 
-
+.b-service__slide {
+    list-style: none;
+    min-height: 261px;
+    /* background-size: 100%; */
+}
 
 .b-service__header {
     width: 400px;
@@ -872,34 +884,60 @@ margin-bottom: 8px;
 
 }
 
-.b-service__list {
+.b-service__buttons {
     list-style: none;
+    position: relative;
 }
 
-.b-service__stripe {
-    /* графический разделитель, пока скрыт */
-    display: none;
-    width: 10px;
-    height: 280px;
-    background-image: url("../img/stripe.png");
-    background-repeat: no-repeat;
+
+
+.b-service__button {
+    width: 240px;
+padding: 15px 0 17px 23px;
+font-family: "Cuprum",Arial,sans-serif;
+font-weight: 700;
+font-size: 21px;
+line-height: 30px;
+text-align: left;
+color: #fff;
+border: none;
+background-color: #32425c;
+box-shadow: inset 0 -1px 0 0 #32425c;
+cursor: pointer;
 }
 
-.b-service__label {
-    color: #ffffff;
-    font-size: 21px;
-    line-height: 30px;
-    font-weight: bold;
-    background-color: #32425c;
-    box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
-    list-style: none;
+.b-service__button:hover,
+.b-service__button:focus {
+    color: #fff;
+background-color: #293449;
+box-shadow: 0 1px 0 0 #293449,inset 0 1px 0 0 #405069;
+}
+
+.button--active,
+.b-service__button:active {
+    color: #32425c;
+background-color: #fff;
+box-shadow: 0 1px 0 0 #ffffff,inset 0 1px 0 0 #fff;
+}
+
+.b-service__button::after {
+    content: "";
+position: absolute;
+width: 10px;
+height: 279px;
+top: -48px;
+right: 0;
+background-image: url(../img/stripe.png);
 }
 
 .b-slide__title {
     color: #32425c;
-    font-size: 36px;
-    line-height: 36px;
-    text-transform: uppercase;
+font-size: 36px;
+line-height: 37px;
+text-transform: uppercase;
+font-weight: normal;
+margin-top: -2px;
+margin-bottom: 30px;
 }
 
 .b-slide__text {
@@ -907,22 +945,25 @@ margin-bottom: 8px;
     font-size: 13px;
     line-height: 24px;
     color: #000000;
+    width:275px;
 }
 
-.b-slide__delivery {
+.slide--delivery {
     background-image: url("../img/delivery.png");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-position: 150px;
 }
 
-.b-slide__warranty {
+.slide--warranty {
     background-image: url("../img/warranty.png");
     background-repeat: no-repeat;
+    display: none;
 }
 
-.b-slide__credit {
+.slide--credit {
     background-image: url("../img/credit.png");
     background-repeat: no-repeat;
+    display: none;
 }
 
 /*                                                                  сервисы */

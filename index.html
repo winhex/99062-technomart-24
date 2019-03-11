@@ -155,7 +155,7 @@
 
           <!-- Слайдер -->
           <section class="b-slider">
-            <input type="radio" id="btn-1" name="toggle" checked>
+            <!--<input type="radio" id="btn-1" name="toggle" checked>
             <input type="radio" id="btn-2" name="toggle">
             <div class="b-slider__controls">
               <label for="btn-1"></label>
@@ -178,8 +178,41 @@
                   <a class="b-slider__btn" href="catalog-drill.html">Открыть каталог</a>
                 </div>
               </div>
-            </div>
+            </div>-->
+<!--new-->
 
+            <div class="b-slider first--slide">
+              <img class="b-slider__img" src="img/first-slide.jpg" alt="Дрели" width="620" height="266">
+              <h2 class="b-slider__title">Дрели</h2>
+              <p class="b-slider__description">Соседям на радость!</p>
+              
+              <!--<a href="catalog.html">Открыть каталог</a>-->
+              <a class="b-slider__link" href="catalog.html">Открыть каталог</a>
+              <div class="slider-point slider-point-1"></div>
+              <div class="slider-point slider-point-2 slider-point-active"></div>
+            </div>
+            <div class="b-slider second--slide">
+              <img class="b-slider__img" src="img/second-slide.jpg" alt="Перфораторы" width="620" height="266">
+              <h2 class="b-slider__title">Перфораторы</h2>
+              <p class="b-slider__description">Настоящие мужские игрушки</p>
+              <!--<button class="slider-btn-prev-slide" type="button">
+                <img src="img/icon-left.svg" alt="" width="22" height="40">
+              </button>
+              <button class="slider-btn-next-slide" type="button">
+                <img src="img/icon-left.svg" alt="" width="22" height="40">
+              </button>-->
+              <a class="b-slider__link" href="catalog.html">Открыть каталог</a>
+              <div class="slider-point slider-point-1 slider-point-active"></div>
+              <div class="slider-point slider-point-2"></div>
+            </div>
+            <button class="b-slider__btn prev--btn" type="button">
+                <img src="img/icon-left.svg" alt="" width="22" height="40">
+              </button>
+              <button class="b-slider__btn next--btn" type="button">
+                <img src="img/icon-left.svg" alt="" width="22" height="40">
+              </button>
+            
+<!--new-->
           </section>
         </div>
         <!-- Конец слайдера -->
@@ -333,9 +366,9 @@
               <h3 class="b-slide__title">
                 Доставка
               </h3>
-              <p class="b-slide__text">
+              <p class="b-slide__text text--warranty">
                 Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно!
+                к вашему подъезду совершенно бесплатно! <br>
                 Ведь мы неплохо заработаем,
                 поднимая его на ваш этаж!
               </p>
@@ -408,10 +441,10 @@
           <p class="b-contacts__text">
             Вы можете забрать товар сами, <br> заехав в наш офис.
           </p>
-          <a class="b-contacts__map" href="#">
+          <a class="b-contacts__map" target="_blank" href="https://yandex.ru/maps/">
             <img src="img/map.jpg" width="300" height="158" alt="Карта">
           </a>
-          <a class="b-contacts__btn" href="contacts.html" title="Напишите нам!">
+          <a class="b-contacts__btn"  href="contacts.html" title="Напишите нам!">
             Заблудились? Напишите нам!
           </a>
         </section>

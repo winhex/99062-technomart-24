@@ -179,13 +179,13 @@
                 </div>
               </div>
             </div>-->
-<!--new-->
+            <!--new-->
 
             <div class="b-slider first--slide">
               <img class="b-slider__img" src="img/first-slide.jpg" alt="Дрели" width="620" height="266">
               <h2 class="b-slider__title">Дрели</h2>
               <p class="b-slider__description">Соседям на радость!</p>
-              
+
               <!--<a href="catalog.html">Открыть каталог</a>-->
               <a class="b-slider__link" href="catalog.html">Открыть каталог</a>
               <div class="slider-point slider-point-1"></div>
@@ -206,13 +206,13 @@
               <div class="slider-point slider-point-2"></div>
             </div>
             <button class="b-slider__btn prev--btn" type="button">
-                <img src="img/icon-left.svg" alt="" width="22" height="40">
-              </button>
-              <button class="b-slider__btn next--btn" type="button">
-                <img src="img/icon-left.svg" alt="" width="22" height="40">
-              </button>
-            
-<!--new-->
+              <img src="img/icon-left.svg" alt="" width="22" height="40">
+            </button>
+            <button class="b-slider__btn next--btn" type="button">
+              <img src="img/icon-left.svg" alt="" width="22" height="40">
+            </button>
+
+            <!--new-->
           </section>
         </div>
         <!-- Конец слайдера -->
@@ -354,15 +354,16 @@
             изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
         </div>
-      <div class="service-list">
-        <ul class="b-service__buttons">
-          <li><button class="b-service__button button--active" name="button-delivery" type="button" >Доставка</button> </li>
-          <li><button class="b-service__button" name="button-warranty" type="button" >Гарантия</button> </li>
-          <li><button class="b-service__button" name="button-credit" type="button" >Кредит</button> </li>
-        </ul>
-      
-        <ul class="b-service__slides">
-          <li class="b-service__slide service__slide--active slide--delivery">
+        <div class="service-list">
+          <ul class="b-service__buttons">
+            <li><button class="b-service__button button--active" name="button-delivery" type="button">Доставка</button>
+            </li>
+            <li><button class="b-service__button" name="button-warranty" type="button">Гарантия</button> </li>
+            <li><button class="b-service__button" name="button-credit" type="button">Кредит</button> </li>
+          </ul>
+
+          <ul class="b-service__slides">
+            <li class="b-service__slide service__slide--active slide--delivery">
               <h3 class="b-slide__title">
                 Доставка
               </h3>
@@ -373,18 +374,19 @@
                 поднимая его на ваш этаж!
               </p>
 
-          </li>
-          <li class="b-service__slide slide--warranty">
+            </li>
+            <li class="b-service__slide slide--warranty">
               <h3 class="b-slide__title">
                 Гарантия
               </h3>
               <p class="b-slide__text">
                 Если купленный у нас товар поломается или заискрит,
-                а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей
+                гарантии. Мы обменяем сгоревший товар на новый.
                 Дом уж восстановите как-нибудь сами.
               </p>
-          </li>
-          <li class="b-service__slide slide--credit">
+            </li>
+            <li class="b-service__slide slide--credit">
               <h3 class="b-slide__title">
                 Кредит
               </h3>
@@ -395,9 +397,10 @@
               <a href="#" class="b-warranty__button">
                 Отправить заявку
               </a>
-          </li>
-        </ul>
-      </div>
+            </li>
+          </ul>
+        </div>
+        </div>
     </section>
     <div class="container">
       <div class="about-content">
@@ -444,7 +447,7 @@
           <a class="b-contacts__map" target="_blank" href="https://yandex.ru/maps/">
             <img src="img/map.jpg" width="300" height="158" alt="Карта">
           </a>
-          <a class="b-contacts__btn"  href="contacts.html" title="Напишите нам!">
+          <a class="b-contacts__btn" href="contacts.html" title="Напишите нам!">
             Заблудились? Напишите нам!
           </a>
         </section>
@@ -584,30 +587,56 @@
       </div>
     </div>
   </footer>
-  <div class="b-modal">
-    <form class="b-modal__mail-form" action="https://echo.htmlacademy.ru" method="post">
-      <label class="b-modal__form-label" for="mail-form-name">
-        Ваше имя:
-      </label>
-      <input class="b-modal__contacts-name" type="text" name="user-name" placeholder="Имя Фамилия" id="mail-form-name">
-      <label class="b-modal__mail-form" for="e-mail">
-        Ваш e-mail:
-      </label>
-      <input class="b-modal__contacts-mail" type="email" name="e-mail" placeholder="login@domain.com" id="e-mail">
-      <label class="b-modal__text-form" for="text-form">
-        Текст письма:
-      </label>
-      <textarea class="b-modal__msg" rows="3" name="text-form" id="text-form"
-        placeholder="В свободной форме"></textarea>
-
+  <section class="b-modal modal-write-us">
+    
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <div class="b-modal__red-line"></div>
+      <form class="b-modal__mail-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-header">
+        <div class="personal-data">
+          <div class="b-modal__personal">
+            <label class="b-modal__form-label" for="mail-form-name">
+              Ваше имя:
+            </label>
+            <input class="b-modal__contacts-input" type="text" name="user-name" placeholder="Имя Фамилия"
+              id="mail-form-name">
+          </div>
+          <div class="b-modal__user-mail">
+            <label class="b-modal__form-label" for="e-mail">
+              Ваш e-mail:
+            </label>
+            <input class="b-modal__contacts-input" type="email" name="e-mail" placeholder="login@domain.com" id="e-mail">
+          </div>
+        </div>
+        <div class="b-modal__text-content">
+          <label class="b-modal__text-form" for="text-form">
+            Текст письма:
+          </label>
+          <textarea class="b-modal__msg" rows="3" name="text-form" id="text-form"
+            placeholder="В свободной форме"></textarea>
+        </div>
+    </div>
+    <div class="modal-footer">
       <button class="b-modal__form-btn" type="submit">
         Отправить
       </button>
-    </form>
+    </div>
+  
+  </form>
+  
     <button class="b-modal__close-btn" type="button">
-      Закрыть
     </button>
-  </div>
+   
+  </section>
+
+  <section class="b-modal modal-map">
+    <div class="map-content">
+      <img src="img/big-map.jpg" width="940" height="446" alt="">
+      <button class="b-modal__map-close"></button>
+
+    </div>
+    
+  </section>
 </body>
 
 </html>

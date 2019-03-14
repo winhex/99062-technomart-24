@@ -259,6 +259,7 @@ padding-bottom: 2px;
      align-items: center;
      justify-content: space-between;
      margin-top: -3px;
+     padding-bottom: 25px;
      /* padding-top: 46px;
 padding-bottom: 43px;
 paddting-left: 53px; */
@@ -429,24 +430,25 @@ padding-left: 25px;
      box-shadow: 0px 5px 0 0 #293449;
      background-color: #32425c;
      padding: 0;
-     height: 60px;
-     margin-top: 25px;
+     margin: 0;
+     /* height: 60px;
+     margin-top: 25px; */
  }
 
  .b-nav__link {
+     
+
      display: block;
-     /* padding: 22px 30px; */
-     color: #ffffff;
-     text-decoration: none;
-     padding-top: 20px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	padding-bottom: 17px;
 
-padding-left: 30px;
-
-padding-right: 30px;
-
-padding-bottom: 17px;
-     /* text-align: center; */
+	color: #ffffff;
+	text-align: center;
  }
+
+ 
 
  /* .header-container {
     display: flex;
@@ -461,6 +463,18 @@ padding-bottom: 17px;
      background-color: #293449;
  }
 
+ /* .b-nav__item:first-child,
+ .b-nav__item:last-child {
+    padding-left: 55px;
+ } */
+
+ .b-nav__item:first-child .b-nav__link {
+	padding-left: 55px;
+}
+
+.b-nav__item:last-child .b-nav__link {
+	padding-right: 55px;
+}
  /*                                                                  хедер */
 
  /*                                                        каталог товаров */
@@ -1216,35 +1230,45 @@ padding-top: 3px;
  .footer-top {
      display: flex;
      justify-content: space-between;
+     flex-wrap: wrap;
  }
 
  .footer-logo {
-     display: flex;
-     justify-content: center;
-     padding-top: 20px;
-     padding-bottom: 20px;
-     box-shadow: 0px 5px 0 0 #b52933;
-     background-color: #ee3643;
-     padding-left: 55px;
-     padding-right: 55px;
-     /* padding-top: 13px;
-
-padding-bottom: 11px; */
-     width: 220px;
-     height: 65px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 220px;
+box-shadow: 0px 5px 0 0 #b52933;
+background-color: #ee3643;
+padding-left: 55px;
+padding-right: 55px;
  }
 
  .b-footer-list {
-     display: flex;
-     justify-content: space-between;
-     list-style: none;
-     padding-top: 39px;
+    display: flex;
+
+    justify-content: space-between;
+    list-style: none;
+    flex-grow: 0;
+    padding: 0;
+   
+margin: 0;
+    padding-top: 39px;
+    width: 580px;
+
  }
+
+ .b-footer-item:last-child,
+ .b-footer__link {
+    padding-right: 0;
+ }
+
 
  .b-footer__item {}
 
  .b-footer__link {
-     padding-right: 30px;
+     /* padding-right: 30px; */
      padding-left: 30px;
      color: #f1f5f7;
      text-decoration: none;
@@ -1254,14 +1278,19 @@ padding-bottom: 11px; */
      display: flex;
      justify-content: space-between;
      flex-wrap: nowrap;
+     padding-bottom: 49px;
  }
 
- .b-contacts {
+ .footer-center:last-child {
+    padding-top: 34px;
+
+ }
+ .b-contacts__adress {
      font-size: 18px;
      line-height: 24px;
      color: #f1f5f7;
      font-style: normal;
-     
+     margin: 0;
      /* width: 322px; */
  }
 
@@ -1278,6 +1307,19 @@ padding-bottom: 11px; */
      justify-content: space-between;
  }
 
+.b-footer-catalog-list {
+    list-style: none;
+    display: flex;
+    width: 550px;
+
+justify-content: space-between;
+
+flex-grow: 0;
+padding: 0;
+
+margin: 0;
+}
+
  .footer-catalog-link {
      color: #ffd180;
  }
@@ -1289,16 +1331,18 @@ padding-bottom: 11px; */
  .footer-bottom {
      display: flex;
      align-items: center;
-     /* padding-top: 35px; */
-     padding-bottom: 30px;
-     justify-content: space-between;
+     
+
+     padding-top: 3px;
+
+padding-bottom: 30px;
  }
 
  .b-copyright {
      font-size: 16px;
      line-height: 18px;
      color: #ffffff;
-     margin-right: 43px;
+     margin-right: 130px;
 
 margin-left: 2px;
  }
@@ -1306,6 +1350,7 @@ margin-left: 2px;
  .b-social-list {
      display: flex;
      list-style: none;
+     padding-left: 34px;
  }
 
  .b-social-link {
@@ -1340,6 +1385,7 @@ margin-left: 2px;
      list-style: none;
      display: flex;
      justify-content: space-between;
+     margin-left: 72px;
  }
 
  .b-feedback__text {

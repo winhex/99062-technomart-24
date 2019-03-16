@@ -10,79 +10,84 @@
 </head>
 
 <body class="b-inner-page">
-  <header class="b-header">
-    <!-- <div class="header-container"> -->
-      <div class="header-top">
+  <header class="b-header__catalog">
 
-        <div class="header-top container">
-          <a class="b-logo header-logo" href="index.html">
-            <img class="b-logo__img" src="img/logo.svg" alt="Техномарт" width="111" height="18">
-          </a>
-  
-          <form class="b-search" action="https://echo.htmlacademy.ru" method="post">
-            <input class="b-search-input" type="search" name="search-form" placeholder="Поиск:" aria-label="Поиск">
-            <button class="b-search-btn" type="submit" name="search-btn" aria-label="Кнопка поиск"></button>
-          </form>
-  
-          <h2 class="visually-hidden">Личный кабинет</h2>
-  
-          <a class="b-bookmarks" href="#" title="Закладки">
-            Закладки: 0
-          </a>
-  
-          <a class="b-basket" href="#" title="Корзина">
-            Корзина: 0
-          </a>
-  
-          <a class="b-order" href="order-form.html" title="Оформить заказ">
-            Оформить заказ
-          </a>
-  
-  
-        </div>
+    <div class="header-top">
+
+      <div class="header-top container">
+        <a class="b-logo header-logo" href="index.html">
+          <img class="b-logo__img" src="img/logo.svg" alt="Техномарт" width="111" height="18">
+        </a>
+
+        <form class="b-search" action="https://echo.htmlacademy.ru" method="post">
+          <input class="b-search-input" type="search" name="search-form" placeholder="Поиск:" aria-label="Поиск">
+          <button class="b-search-btn" type="submit" name="search-btn" aria-label="Кнопка поиск"></button>
+        </form>
+
+        <h2 class="visually-hidden">Личный кабинет</h2>
+
+        <a class="b-bookmarks" href="#" title="Закладки">
+          Закладки: 0
+        </a>
+
+        <a class="b-basket" href="#" title="Корзина">
+          Корзина: 10
+        </a>
+
+        <a class="b-order" href="order-form.html" title="Оформить заказ">
+          Оформить заказ
+        </a>
+
+
+      </div>
+    </div>
+
+    <div class="header-middle container">
+
+
+      <h1 class="b-store__title">
+        Интернет-магазин строительных материалов и инструментов для ремонта
+      </h1>
+
+      <div class="b-main-contacts contacts--catalog">
+        <h2 class="visually-hidden">Контакты</h2>
+        <a class="b-about__phone" href="tel:+78125550555" aria-label="Номер телефона">
+          +7 (812) 555-05-55
+        </a>
+        <p class="b-about__address">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </p>
       </div>
 
-      <div class="header-middle container">
+      <div class="b-header-user-info">
+        <div class="user-info-top"> 
+        <a class="b-user-area__btn" href="profile.html" title="Равшан Джамшутович">
+          Равшан Джамшутович
+        </a>
+        <a class="b-user-area__sign-out" href="sign-out.html" title="Выйти">
 
-
-        <h1 class="b-store__title">
-          Интернет-магазин строительных материалов и инструментов для ремонта
-        </h1>
-  
-        <div class="b-contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <a class="b-about__phone" href="tel:+78125550555" aria-label="Номер телефона">
-            +7(812)555-05-55
-          </a>
-          <p class="b-about__address">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </p>
-        </div>
-  
-        <div class="b-header-user-info">
-          <a class="b-user-area__btn" href="profile.html" title="Равшан Джамшутович">
-            Равшан Джамшутович
-          </a>
-          <a class="b-user-area__sign-out" href="sign-out.html" title="Выйти">
-  
-          </a>
-          <ul class="b-orders__list">
-            <li class="b-orders__item">
-              <a class="b-orders__link" href="#">
-                Мои заказы
-              </a>
-            </li>
-            
-            <li class="b-orders__item">
-              <a class="b-orders__link" href="#">
-                Личный кабинет
-              </a>
-            </li>
-          </ul>
-        </div>
-  
-  
+        </a>
       </div>
+        <ul class="b-orders__list">
+          <li class="b-orders__item">
+            <a class="b-orders__link" href="#">
+              Мои заказы
+            </a>
+          </li>
+          
+          <li class="b-orders__item">
+            <a class="b-orders__link link--private" href="#">
+              Личный кабинет
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+
+
+
     <nav class="container">
       <ul class="b-nav__list">
         <li class="b-nav__item">
@@ -123,12 +128,12 @@
       </ul>
     </nav>
 
-    
+    <!-- </div> -->
   </header>
   <main class="">
-    <div class="container">
+    <div class="container catalog-content">
       <ul class="b-crumbs">
-        <li class="b-crumbs__item">
+        <li class="b-crumbs__item item--main-page">
           <a class="b-crumbs__link " href="index.html" title="Главная">
 
           </a>
@@ -258,17 +263,25 @@
             <p class="b-sort__title">
               Сортировка:
             </p>
-            <a class="b-sort__btn" href="#">
+            <div class="b-sort__options">
+            <a class="b-sort__btn sort--price" href="#">
               по цене
             </a>
-            <a class="b-sort__btn" href="#">
+            <a class="b-sort__btn sort--type" href="#">
               по типу
             </a>
-            <a class="b-sort__btn" href="#">
+            <a class="b-sort__btn sort--func" href="#">
               по функционалу
             </a>
-            <a class="b-sort__btn sort--up" href="#"></a>
-            <a class="b-sort__btn sort--down" href="#"></a>
+          </div>
+            <div class="catalog-sort-arrows">
+              <a class="b-sort__up" href="#">
+                <svg class="b-sort__up--icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><polygon points="5.5 0 0 10 11 10 "/></svg>
+              </a>
+              <a class="b-sort__down" href="#">
+                <svg class="b-sort__down--icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><polyline points="5.5 10 0 0 11 0 "/></svg>
+              </a>
+            </div>
 
 
           </div>
@@ -323,11 +336,11 @@
               <a href="#" class="b-catalog__link">
                 <img class="b-catalog__img" src="img/bfg-3000.jpg"  width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               </a>
-              <a href="#" class="b-catalog__title" title="Перфоратор BOSCH BFG 2000">
+              <a href="#" class="b-catalog__title catalog__title--new title--new-flag" title="Перфоратор BOSCH BFG 2000">
                 Перфоратор BOSCH BFG 2000
               </a>
 
-              <a href="#" class="b-catalog__new-price" title="12500 р.">
+              <a href="#" class="b-catalog__new-price " title="12500 р.">
                 12500 р.
               </a>
               <div class="b-hidden-form">
@@ -367,7 +380,7 @@
               <a href="#" class="b-catalog__link">
                 <img class="b-catalog__img" src="img/bfg-6000.jpg"  width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
               </a>
-              <a href="#" class="b-catalog__title" title="Перфоратор BOSCH BFG 6000">
+              <a href="#" class="b-catalog__title title--new-flag" title="Перфоратор BOSCH BFG 6000">
                 Перфоратор BOSCH BFG 6000
               </a>
 
@@ -391,7 +404,7 @@
               <a href="#" class="b-catalog__link">
                 <img class="b-catalog__img" src="img/bfg-3000.jpg"  width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               </a>
-              <a href="#" class="b-catalog__title" title="Перфоратор BOSCH BFG 2000">
+              <a href="#" class="b-catalog__title catalog__title--new" title="Перфоратор BOSCH BFG 2000">
                 Перфоратор BOSCH BFG 2000
               </a>
 
@@ -411,7 +424,7 @@
               <a href="#" class="b-catalog__link">
                 <img class="b-catalog__img" src="img/bfg-3000.jpg"  width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
               </a>
-              <a href="#" class="b-catalog__title" title="Перфоратор BOSCH BFG 3000">
+              <a href="#" class="b-catalog__title title--new-flag" title="Перфоратор BOSCH BFG 3000">
                 Перфоратор BOSCH BFG 3000
               </a>
 
@@ -457,7 +470,7 @@
               <a href="#" class="b-catalog__link">
                 <img class="b-catalog__img" src="img/bfg-3000.jpg"  width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               </a>
-              <a href="#" class="b-catalog__title" title="Перфоратор BOSCH BFG 2000">
+              <a href="#" class="b-catalog__title catalog__title--new" title="Перфоратор BOSCH BFG 2000">
                 Перфоратор BOSCH BFG 2000
               </a>
 
@@ -476,7 +489,7 @@
           </ul>
           <ul class="b-switch">
             <li class="b-switch__item ">
-              <a class="b-switch__btn b-switch__item--active">
+              <a class="b-switch__btn item--active" href="#">
                 1
               </a>
             </li>
@@ -490,7 +503,8 @@
                 3
               </a>
             </li>
-            <li class="b-switch__item"><a href="#" class="b-switch__btn">
+            <li class="b-switch__item ">
+              <a href="#" class="b-switch__btn next--item">
                 Следующая
               </a>
             </li>
@@ -529,84 +543,85 @@
 
       <div class="footer-top">
         <a class="b-logo footer-logo" href="#">
-          <img src="img/footer-logo.svg" alt="Техномарт">
+          <img src="img/footer-logo.svg" width="138" height="23" alt="Техномарт">
         </a>
-        <nav class="b-footer-nav">
+        <!-- <nav class="b-footer-nav"> -->
 
-          <ul class="b-footer-list">
-            <li class="b-footer__item">
-              <a class="b-footer__link" href="company.html">
-                Компания
-              </a>
-            </li>
-            <li class="b-footer__item">
-              <a class="b-footer__link" href="news.html">
-                Новости
-              </a>
-            </li>
-            <li class="b-footer__item">
-              <a class="b-footer__link" href="catalog.html">
-                Каталог
-              </a>
-            </li>
-            <li class="b-footer__item">
-              <a class="b-footer__link" href="delivery.html">
-                Доставка
-              </a>
-            </li>
-            <li class="b-footer__item">
-              <a class="b-footer__link" href="contacts.html">
-                Контакты</a>
-            </li>
+        <ul class="b-footer-list">
+          <li class="b-footer__item">
+            <a class="b-footer__link" href="company.html">
+              Компания
+            </a>
+          </li>
+          <li class="b-footer__item">
+            <a class="b-footer__link" href="news.html">
+              Новости
+            </a>
+          </li>
+          <li class="b-footer__item">
+            <a class="b-footer__link" href="catalog.html">
+              Каталог
+            </a>
+          </li>
+          <li class="b-footer__item">
+            <a class="b-footer__link" href="delivery.html">
+              Доставка
+            </a>
+          </li>
+          <li class="b-footer__item">
+            <a class="b-footer__link" href="contacts.html">
+              Контакты</a>
+          </li>
 
 
-          </ul>
-        </nav>
+        </ul>
+        <!-- </nav> -->
       </div>
 
       <div class="footer-center">
-        <address class="b-contacts">
-          <p class="b-contacts__adress">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            <a class="b-contacts__phone" href="tel:+78125550555" aria-label="Номер телефона магазина">
-              +7 (812) 555-05-55
+        <!-- <address class="b-contacts"> -->
+        <p class="b-contacts__adress">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+          <a class="b-contacts__phone" href="tel:+78125550555" aria-label="Номер телефона магазина">
+            +7 (812) 555-05-55
+          </a>
+        </p>
+
+        <!-- </address> -->
+
+
+        <!-- <div class="footer-catalog"> -->
+        <ul class="b-footer-catalog-list">
+          <li class="b-footer__item footer-catalog-item">
+            <a class="b-footer__link footer-catalog-link" href="materials.html">
+              Материалы
             </a>
-          </p>
-
-        </address>
-
-
-        <div class="footer-catalog">
-          <ul class="b-footer-list ">
-            <li class="b-footer__item footer-catalog-item">
-              <a class="b-footer__link footer-catalog-link" href="materials.html">
-                Материалы
-              </a>
-            </li>
-            <li class="b-footer__item footer-catalog-item">
-              <a class="b-footer__link footer-catalog-link" href="technics.html">
-                Техника
-              </a>
-            </li>
-            <li class="b-footer__item footer-catalog-item">
-              <a class="b-footer__link footer-catalog-link" href="tools.html">
-                Инструмент
-              </a>
-            </li>
-            <li class="b-footer__item footer-catalog-item">
-              <a class="b-footer__link footer-catalog-link" href="discounts.html">
-                Спецпредложения
-              </a>
-            </li>
-          </ul>
-        </div>
+          </li>
+          <li class="b-footer__item footer-catalog-item">
+            <a class="b-footer__link footer-catalog-link" href="technics.html">
+              Техника
+            </a>
+          </li>
+          <li class="b-footer__item footer-catalog-item">
+            <a class="b-footer__link footer-catalog-link" href="tools.html">
+              Инструмент
+            </a>
+          </li>
+          <li class="b-footer__item footer-catalog-item">
+            <a class="b-footer__link footer-catalog-link" href="discounts.html">
+              Спецпредложения
+            </a>
+          </li>
+        </ul>
+        <!-- </div> -->
       </div>
+
 
     </div>
     <div class="footer-links">
       <div class="footer-bottom container">
         <p class="b-copyright">
-          © 2010-2017 Компания "Техномарт" <br>
+          © 2010-2019 Компания «Техномарт» <br>
           Все права защищены
         </p>
 
@@ -643,8 +658,9 @@
           <li class="b-feedback__item">
 
             <p class="b-feedback__text">
-              Разработано: <br>
-              <a class="b-feedback__link" href="https://htmlacademy.ru" title="https://htmlacademy.ru">
+              Разработано &#8212; <br>
+              <a class="b-feedback__link" href="https://htmlacademy.ru/intensive/htmlcss"
+                title="https://htmlacademy.ru">
                 htmlacademy.ru
               </a>
             </p>
@@ -656,28 +672,28 @@
     </div>
   </footer>
 
-  <div class="b-modal" id="cart_catalog">
-    <div class="b-modal__cart-top">
-      <span class="b-modal__cart-text">
+  <div class="hidden">
+  <div class="b-modal__cart">
+    <div class="b-cart-top">
+      <p class="b-cart-text">
         Товар добавлен в корзину!
-      </span>
+      </p>
     </div>
     <div class="modal-cart-bottom">
-      <a class="button" href="order-form.html" >
+      <a class="b-cart__order-btn" href="order-form.html" >
         Оформить заказ
       </a>
-      <button class="button continue-button" type="button">
-        <span class="continue-button-text">
+      <button class="b-cart__shop-btn" type="button">
+        
           Продолжить покупки
-        </span>
+        
       </button>
-      <button class="close-button" type="button">
-        <span class="close-button-text">
-          Закрыть
-        </span>
-      </button>
+      
     </div>
+    <button class="b-cart__close-btn" type="button">                     
+      </button>
   </div>
+</div>
 
   
 </body>

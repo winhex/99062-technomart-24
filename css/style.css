@@ -1668,6 +1668,7 @@ text-decoration: none;
  .b-filter__options {
      border: none;
      margin-bottom: 5px;
+     padding:0;
  }
 
  .b-filter__title {}
@@ -1684,6 +1685,12 @@ text-decoration: none;
  .b-filter__options {
      display: flex;
      flex-direction: column;
+ }
+
+ .b-filter__brands,
+ .b-power-options {
+     list-style: none;
+     padding:0;
  }
 
  .b-filter__brand, .b-filter__brand-power {

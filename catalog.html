@@ -196,7 +196,32 @@
             <input class="b-price__range" type="text" name="max-price" value="30000">
           </div>
           <fieldset class="b-filter__options">
-            <legend class="b-filter__section-title section--brands">
+              <legend class="b-filter__section-title section--brands">
+                  Производители:
+                </legend>
+              <ul class="b-filter__brands">
+                  <li class="b-filter-item">
+                    <input class="b-filter__option" type="checkbox" name="Bosch" id="Bosch" checked>
+                    <label for="Bosch">Bosch</label>
+                  </li>
+                  <li class="b-filter__item">
+                    <input class="b-filter__option" type="checkbox" name="Interskol" id="Interskol">
+                    <label for="Interskol">Интерскол</label>
+                  </li>
+                  <li class="b-filter__item">
+                    <input class="b-filter__option" type="checkbox" name="Makita" id="Makita" checked>
+                    <label for="Makita">Makita</label>
+                  </li>
+                  <li class="b-filter__item">
+                    <input class="b-filter__option" type="checkbox" name="Dewalt" id="Dewalt">
+                    <label for="Dewalt">Dewalt</label>
+                  </li>
+                  <li class="b-filter__item">
+                    <input class="b-filter__option" type="checkbox" name="Hitachi" id="Hitachi">
+                    <label for="Hitachi">Hitachi</label>
+                  </li>
+                </ul>
+            <!-- <legend class="b-filter__section-title section--brands">
               Производители:
             </legend>
             <input class="b-filter__option" type="checkbox" name="option-1" id="bosch" checked>
@@ -229,13 +254,30 @@
             <label class="b-filter__brand" for="hitachi">
               <span class="b-filter__on"></span>
               <span class="b-filter__off"></span>
-              Hitachi</label>
+              Hitachi</label> -->
           </fieldset>
+
           <fieldset class="b-filter__options">
             <legend class="b-filter__section-title">
               Питание:
             </legend>
-            <input class="b-filter__power-options" type="radio" name="brand-power" value="option-1" id="wireless">
+            <ul class="b-power-options">
+                <li class="b-power__item">
+                    <input class="b-filter__power-options" type="radio" name="brand-power" value="option-1" id="wireless">
+                    <label class="b-filter__brand-power" for="wireless">
+                      Аккумуляторы
+                                    
+                    </label>
+                </li>
+                <li class="b-power__item">
+                    <input class="b-filter__power-options" type="radio" name="brand-power" value="option-2" id="wired">
+                    <label class="b-filter__brand-power" for="wired">
+                        Сетевые
+                    </label>
+                </li>
+              </ul>
+
+            <!-- <input class="b-filter__power-options" type="radio" name="brand-power" value="option-1" id="wireless">
             <label class="b-filter__brand-power" for="wireless">
               <span class="b-filter__text">
                 Аккумуляторы
@@ -250,7 +292,7 @@
               <span>
                 Сетевые
               </span>
-            </label>
+            </label> -->
           </fieldset>
           <button class="b-filter__btn" type="submit">
             Показать

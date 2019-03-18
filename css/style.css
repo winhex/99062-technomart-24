@@ -172,7 +172,7 @@
  }
 
  .b-user-area {
-     margin-top: -42px;
+     margin-top: -36px;
      /* margin-right: -30px; */
  }
 
@@ -232,19 +232,6 @@
      display: none;
  }
 
- /* .b-basket {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    text-decoration: none;
-    font-style: normal;
-    font-size: 17px;
-    line-height: 18px;
-    color: #ffffff;
-    font-family: 'Cuprum', Arial, sans-serif;
-}  */
-
  .b-order {
      width: 150px;
      height: 42px;
@@ -271,21 +258,12 @@
      justify-content: space-between;
      margin-top: -3px;
      padding-bottom: 25px;
-     /* padding-top: 46px;
-padding-bottom: 43px;
-paddting-left: 53px; */
-     /* width: 960px;
-    padding: 0 10px; */
-     /* padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 10px; */
-     /* margin: 0 auto; */
  }
 
  .b-about {}
 
  .b-store__title {
-    font-family: "Cuprum",Arial,sans-serif;
+     font-family: "Cuprum", Arial, sans-serif;
      font-size: 16px;
      font-weight: normal;
      font-style: italic;
@@ -294,7 +272,6 @@ paddting-left: 53px; */
      width: 196px;
      margin-left: 50px;
      margin-top: 0;
-     margin-right: 73px;
  }
 
  .b-about__phone {
@@ -303,13 +280,12 @@ paddting-left: 53px; */
      height: 45px;
      border: solid 3px #ffffff;
      text-decoration: none;
-     font-family: "Cuprum",Arial,sans-serif;
+     font-family: "Cuprum", Arial, sans-serif;
      font-size: 21px;
      /* font-weight: normal;
      font-style: normal;
      font-stretch: normal; */
      line-height: 21px;
-     
      color: #e9292a;
      text-align: center;
      background-image: url(../img/icon-phone.svg);
@@ -326,7 +302,7 @@ paddting-left: 53px; */
      position: relative;
      width: 46px;
      height: 16px;
-     font-family: "Cuprum",Arial,sans-serif;
+     font-family: "Cuprum", Arial, sans-serif;
      font-size: 21px;
      font-weight: normal;
      font-style: normal;
@@ -371,7 +347,7 @@ paddting-left: 53px; */
  .b-about__sign-up-btn {
      width: 46px;
      height: 16px;
-     font-family: "Cuprum",Arial,sans-serif;
+     font-family: "Cuprum", Arial, sans-serif;
      font-size: 21px;
      font-weight: normal;
      font-style: normal;
@@ -389,7 +365,7 @@ paddting-left: 53px; */
  }
 
  .b-about__address {
-    font-family: "Cuprum",Arial,sans-serif;
+     font-family: "Cuprum", Arial, sans-serif;
      font-size: 14px;
      font-weight: normal;
      font-style: normal;
@@ -438,8 +414,6 @@ paddting-left: 53px; */
  .b-nav__item:hover, .b-nav__item:focus {
      background-color: #293449;
  }
-
- 
 
  .b-nav__item:first-child .b-nav__link {
      padding-left: 55px;
@@ -1255,6 +1229,10 @@ text-decoration: none;
      width: 322px;
      /* padding-left: 32px; */
      padding-top: 3px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 270px;
  }
 
  .b-contacts__title {
@@ -1414,7 +1392,7 @@ text-decoration: none;
  .b-social-list {
      display: flex;
      list-style: none;
-     padding-left: 34px;
+     padding-left: 30px;
  }
 
  .b-social-link {
@@ -1474,12 +1452,11 @@ text-decoration: none;
  .contacts--catalog {
      /* padding-left: 76px; */
      display: flex;
-
-flex-direction: column;
-
-justify-content: center;
-
-width: 270px;
+     flex-direction: column;
+     /* justify-content: center; */
+     text-align: center;
+     width: 270px;
+     margin-left: 74px;
  }
 
  .b-orders__list {
@@ -1535,7 +1512,7 @@ width: 270px;
  .b-crumbs__item {
      position: relative;
      margin: 0;
-     margin-right: 42px;
+     margin-right: 35px;
      color: #000000;
      font-family: "PT Sans", "Arial", sans-serif;
      font-size: 13px;
@@ -1597,7 +1574,7 @@ width: 270px;
      width: 12px;
      height: 12px;
      top: 3px;
-     left: -25px;
+     left: -24px;
      background-image: url(../img/icon-right-small.svg);
      background-repeat: no-repeat;
  }
@@ -1632,55 +1609,43 @@ width: 270px;
  }
 
  .b-filter__green-line {
-    position: absolute;
-    color: #00ca74;
-    width: 140px;
+     position: absolute;
+     color: #00ca74;
+     width: 140px;
+     left: 30px;
+     top: 30px;
+ }
 
-left: 30px;
-
-top: 30px;
-}
-.b-filter__grey-line {
-    position: absolute;
-    width: 30px;
-    
-    top: 30px;
-    border: 1px solid lightgrey;
-
-right: 20px;
-}
+ .b-filter__grey-line {
+     position: absolute;
+     width: 30px;
+     top: 30px;
+     border: 1px solid lightgrey;
+     right: 20px;
+ }
 
  .b-filter__green-line:before {
-    content: "";
-    position: absolute;
-    width: 20px;
-
-height: 20px;
-
-top: -11px;
-
-left: -11px;
-    background-image: url(../img/filter-button.svg);
-    background-repeat: no-repeat;
-
+     content: "";
+     position: absolute;
+     width: 20px;
+     height: 20px;
+     top: -11px;
+     left: -11px;
+     background-image: url(../img/filter-button.svg);
+     background-repeat: no-repeat;
  }
 
  .b-filter__green-line:after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    z-index: 2;
-
-height: 20px;
-
-top: -11px;
-
-left: 130px;
-    background-image: url(../img/filter-button.svg);
-    background-repeat: no-repeat;
-
+     content: "";
+     position: absolute;
+     width: 20px;
+     z-index: 2;
+     height: 20px;
+     top: -11px;
+     left: 130px;
+     background-image: url(../img/filter-button.svg);
+     background-repeat: no-repeat;
  }
-
 
  .b-filter__title {
      padding: 10px 18px;
@@ -1693,7 +1658,7 @@ left: 130px;
      font-weight: normal;
      width: 220px;
  }
- 
+
  .b-filter__price-title {
      font-size: 17px;
      line-height: 30px;
@@ -1705,26 +1670,23 @@ left: 130px;
  }
 
  .section--brands {
-    font-size: 17px;
-    line-height: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #000000;
-    margin-top:20px;
-    margin-bottom: 13px;
+     font-size: 17px;
+     line-height: 30px;
+     font-weight: bold;
+     text-transform: uppercase;
+     color: #000000;
+     margin-top: 27px;
+     margin-bottom: 13px;
  }
 
  .b-filter__power-title {
-    font-size: 17px;
-    line-height: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #000000;
-    margin-top: 7px;
-    
-
+     font-size: 17px;
+     line-height: 30px;
+     font-weight: bold;
+     text-transform: uppercase;
+     color: #000000;
+     margin-top: 3px;
  }
-
 
  .b-filter__slider {
      width: 220px;
@@ -1738,7 +1700,7 @@ left: 130px;
      background-color: #f7f3ec;
      border: none;
      width: 95px;
-     padding-top: 10px;
+     padding-top: 7px;
      padding-bottom: 10px;
      text-align: center;
  }
@@ -1750,7 +1712,7 @@ left: 130px;
  .b-filter__options {
      border: none;
      margin-bottom: 5px;
-     padding:0;
+     padding: 0;
  }
 
  .b-filter__title {}
@@ -1769,112 +1731,99 @@ left: 130px;
      flex-direction: column;
  }
 
- .b-filter__brands,
- .b-power-options {
+ .b-filter__brands, .b-power-options {
      list-style: none;
-     padding-left:30px;
-     
+     padding-left: 30px;
  }
 
  .b-filter__brands {
-     margin-top:0;
-
+     margin-top: 0;
  }
 
- .b-filter__brands label,
- .b-power-options label {
-    position: relative;
-  
-    font-size: 15px;
-    line-height: 20px;
-  }
+ .b-filter__brands label, .b-power-options label {
+     position: relative;
+     font-size: 15px;
+     line-height: 20px;
+ }
 
-
- .b-filter__brand,
- .b-filter__brand-power,
- .b-filter__item {
+ .b-filter__brand, .b-filter__brand-power, .b-filter__item {
      text-transform: uppercase;
  }
 
  .b-filter__item {
-    padding-bottom: 20px;
-    padding-left: 3px;
+     padding-bottom: 20px;
+     padding-left: 3px;
  }
 
- .b-filter__option,
- .b-filter__power-options {
+ .b-filter__option, .b-filter__power-options {
      display: none;
  }
 
  .b-filter__item:last-child {
-    padding-bottom: 0;
-}
-
- .b-filter__option:checked ~ label::before {
-    content: url("../img/checkbox-on.svg");
-    
+     padding-bottom: 0;
  }
 
- .b-filter__option:disabled ~ label {
-    color: rgba(0, 0, 0, 0.4);
-  }
+ .b-filter__option:checked~label::before {
+     content: url("../img/checkbox-on.svg");
+ }
+
+ .b-filter__option:disabled~label {
+     color: rgba(0, 0, 0, 0.4);
+ }
 
  .b-filter__brands label::before {
-    position: absolute;
-    top: 0;
-    left: -33px;
-    z-index: 1;
-    width: 1px;
-    height: 1px;
-    content: url("../img/checkbox-off.svg");
+     position: absolute;
+     top: 0;
+     left: -33px;
+     z-index: 1;
+     width: 1px;
+     height: 1px;
+     content: url("../img/checkbox-off.svg");
  }
 
- .b-filter__power-options:checked ~ label::before {
-    content: url("../img/radio-on.svg");
-    
+ .b-filter__power-options:checked~label::before {
+     content: url("../img/radio-on.svg");
  }
- 
+
  .b-filter__line {
-    width: 100%;
-    color: #e5e5e5;
-    margin-top: 0;
-    margin-bottom: 15px;
+     width: 100%;
+     color: #e5e5e5;
+     margin-top: 0;
+     margin-bottom: 15px;
  }
 
  .b-power-options label::before {
-    position: absolute;
-    top: 0;
-    left: -33px;
-    z-index: 1;
-    width: 1px;
-    height: 1px;
-    content: url("../img/radio-off.svg");
+     position: absolute;
+     top: 0;
+     left: -33px;
+     z-index: 1;
+     width: 1px;
+     height: 1px;
+     content: url("../img/radio-off.svg");
  }
 
  .b-power__item {
-    padding-bottom: 15px;
-
-padding-left: 3px;
-
-padding-top: 5px;
+     padding-bottom: 15px;
+     padding-left: 3px;
+     padding-top: 5px;
  }
 
  .b-power-options {
-     margin:0;
+     margin: 0;
      margin-top: 8px;
  }
 
  .b-filter__btn {
-    width: 140px;
-    padding: 9px 0;
-    margin-top: 58px;
-    font-size: 13px;
-    line-height: 18px;
-    text-align: center;
-    border: 1px solid #eaeaea;
-    border-radius: 3px;
-    background-color: #fff;
-    text-transform: uppercase;
+     width: 140px;
+     padding: 9px 0;
+     margin-top: 58px;
+     font-size: 13px;
+     line-height: 18px;
+     text-align: center;
+     border: 1px solid #eaeaea;
+     border-radius: 3px;
+     background-color: #fff;
+     text-transform: uppercase;
  }
 
  .b-sort {
@@ -2344,6 +2293,7 @@ padding-top: 5px;
  .hidden {
      display: none;
  }
+
  /*                                         добавление товара в каталоге */
 
  /*                                                                   формы */

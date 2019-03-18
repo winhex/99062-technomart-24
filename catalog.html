@@ -52,7 +52,7 @@
       <div class="b-main-contacts contacts--catalog">
         <h2 class="visually-hidden">Контакты</h2>
         <a class="b-about__phone" href="tel:+78125550555" aria-label="Номер телефона">
-          +7 (812) 555-05-55
+          +7 (812) 555&#8211;05&#8211;55
         </a>
         <p class="b-about__address">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -166,14 +166,17 @@
           <h3 class="b-filter__title">
             Фильтр:
           </h3>
-          <h4 class="b-filter__section-title">
+          <h4 class="b-filter__price-title">
             Цена:
           </h4>
           <div class="b-filter__slider">
 
+            <hr class="b-filter__green-line">
+            <hr class="b-filter__grey-line">
 
 
-            <span class="b-filter__img first--button">
+
+            <!-- <span class="b-filter__img first--button">
 
             </span>
             <span class="b-filter__gray-line">
@@ -184,7 +187,7 @@
             </span>
             <span class="b-filter__img second--button">
 
-            </span>
+            </span> -->
 
 
           </div>
@@ -200,7 +203,7 @@
                   Производители:
                 </legend>
               <ul class="b-filter__brands">
-                  <li class="b-filter-item">
+                  <li class="b-filter__item">
                     <input class="b-filter__option" type="checkbox" name="Bosch" id="Bosch" checked>
                     <label for="Bosch">Bosch</label>
                   </li>
@@ -221,51 +224,18 @@
                     <label for="Hitachi">Hitachi</label>
                   </li>
                 </ul>
-            <!-- <legend class="b-filter__section-title section--brands">
-              Производители:
-            </legend>
-            <input class="b-filter__option" type="checkbox" name="option-1" id="bosch" checked>
-
-            <label class="b-filter__brand" for="bosch">
-              <span class="b-filter__on"></span>
-              <span class="b-filter__off"></span>
-              Bosh
-            </label>
-
-            <input class="b-filter__option" type="checkbox" name="option-2" id="interskol">
-
-            <label class="b-filter__brand" for="interskol">
-              <span class="b-filter__on"></span>
-              <span class="b-filter__off"></span>
-              Интерскол
-            </label>
-
-            <input class="b-filter__option" type="checkbox" name="option-3" id="makita" checked>
-            <label class="b-filter__brand" for="makita">
-              <span class="b-filter__on"></span>
-              <span class="b-filter__off"></span>
-              Makita</label>
-            <input class="b-filter__option" type="checkbox" name="option-4" id="dewalt">
-            <label class="b-filter__brand" for="dewalt">
-              <span class="b-filter__on"></span>
-              <span class="b-filter__off"></span>
-              Dewalt</label>
-            <input class="b-filter__option" type="checkbox" name="option-5" id="hitachi">
-            <label class="b-filter__brand" for="hitachi">
-              <span class="b-filter__on"></span>
-              <span class="b-filter__off"></span>
-              Hitachi</label> -->
+            
           </fieldset>
-
+          <hr class="b-filter__line">
           <fieldset class="b-filter__options">
-            <legend class="b-filter__section-title">
+            <legend class="b-filter__power-title">
               Питание:
             </legend>
             <ul class="b-power-options">
                 <li class="b-power__item">
                     <input class="b-filter__power-options" type="radio" name="brand-power" value="option-1" id="wireless">
                     <label class="b-filter__brand-power" for="wireless">
-                      Аккумуляторы
+                      Аккумуляторные
                                     
                     </label>
                 </li>

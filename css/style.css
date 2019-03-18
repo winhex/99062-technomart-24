@@ -285,7 +285,7 @@ paddting-left: 53px; */
  .b-about {}
 
  .b-store__title {
-     font-family: 'Cuprum';
+    font-family: "Cuprum",Arial,sans-serif;
      font-size: 16px;
      font-weight: normal;
      font-style: italic;
@@ -294,6 +294,7 @@ paddting-left: 53px; */
      width: 196px;
      margin-left: 50px;
      margin-top: 0;
+     margin-right: 73px;
  }
 
  .b-about__phone {
@@ -302,13 +303,13 @@ paddting-left: 53px; */
      height: 45px;
      border: solid 3px #ffffff;
      text-decoration: none;
-     font-family: 'Cuprum';
+     font-family: "Cuprum",Arial,sans-serif;
      font-size: 21px;
-     font-weight: normal;
+     /* font-weight: normal;
      font-style: normal;
-     font-stretch: normal;
+     font-stretch: normal; */
      line-height: 21px;
-     letter-spacing: 0.4px;
+     
      color: #e9292a;
      text-align: center;
      background-image: url(../img/icon-phone.svg);
@@ -325,7 +326,7 @@ paddting-left: 53px; */
      position: relative;
      width: 46px;
      height: 16px;
-     font-family: 'Cuprum';
+     font-family: "Cuprum",Arial,sans-serif;
      font-size: 21px;
      font-weight: normal;
      font-style: normal;
@@ -370,7 +371,7 @@ paddting-left: 53px; */
  .b-about__sign-up-btn {
      width: 46px;
      height: 16px;
-     font-family: 'Cuprum';
+     font-family: "Cuprum",Arial,sans-serif;
      font-size: 21px;
      font-weight: normal;
      font-style: normal;
@@ -388,7 +389,7 @@ paddting-left: 53px; */
  }
 
  .b-about__address {
-     font-family: 'Cuprum';
+    font-family: "Cuprum",Arial,sans-serif;
      font-size: 14px;
      font-weight: normal;
      font-style: normal;
@@ -398,7 +399,7 @@ paddting-left: 53px; */
      text-align: center;
      color: #32425c;
      margin-top: 3px;
-     margin-left: -19px;
+     /* margin-left: -19px; */
  }
 
  .b-nav__list {
@@ -416,7 +417,7 @@ paddting-left: 53px; */
 
  .b-nav__link {
      display: block;
-     padding-top: 20px;
+     padding-top: 19px;
      padding-left: 15px;
      padding-right: 15px;
      padding-bottom: 17px;
@@ -438,17 +439,14 @@ paddting-left: 53px; */
      background-color: #293449;
  }
 
- /* .b-nav__item:first-child,
- .b-nav__item:last-child {
-    padding-left: 55px;
- } */
+ 
 
  .b-nav__item:first-child .b-nav__link {
      padding-left: 55px;
  }
 
  .b-nav__item:last-child .b-nav__link {
-     padding-right: 55px;
+     padding-right: 53px;
  }
 
  /*                                                    хедер каталога */
@@ -1255,7 +1253,7 @@ text-decoration: none;
      color: #f1f5f7;
      font-style: normal;
      width: 322px;
-     padding-left: 32px;
+     /* padding-left: 32px; */
      padding-top: 3px;
  }
 
@@ -1474,7 +1472,14 @@ text-decoration: none;
  /*                                                                 страница каталога */
 
  .contacts--catalog {
-     padding-left: 76px;
+     /* padding-left: 76px; */
+     display: flex;
+
+flex-direction: column;
+
+justify-content: center;
+
+width: 270px;
  }
 
  .b-orders__list {
@@ -1622,6 +1627,61 @@ text-decoration: none;
      width: 220px;
  }
 
+ .b-filter__slider {
+     position: relative;
+ }
+
+ .b-filter__green-line {
+    position: absolute;
+    color: #00ca74;
+    width: 140px;
+
+left: 30px;
+
+top: 30px;
+}
+.b-filter__grey-line {
+    position: absolute;
+    width: 30px;
+    
+    top: 30px;
+    border: 1px solid lightgrey;
+
+right: 20px;
+}
+
+ .b-filter__green-line:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+
+height: 20px;
+
+top: -11px;
+
+left: -11px;
+    background-image: url(../img/filter-button.svg);
+    background-repeat: no-repeat;
+
+ }
+
+ .b-filter__green-line:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    z-index: 2;
+
+height: 20px;
+
+top: -11px;
+
+left: 130px;
+    background-image: url(../img/filter-button.svg);
+    background-repeat: no-repeat;
+
+ }
+
+
  .b-filter__title {
      padding: 10px 18px;
      margin: 0;
@@ -1633,8 +1693,8 @@ text-decoration: none;
      font-weight: normal;
      width: 220px;
  }
-
- .b-filter__section-title {
+ 
+ .b-filter__price-title {
      font-size: 17px;
      line-height: 30px;
      font-weight: bold;
@@ -1643,6 +1703,28 @@ text-decoration: none;
      margin-top: 13px;
      margin-bottom: 13px;
  }
+
+ .section--brands {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top:20px;
+    margin-bottom: 13px;
+ }
+
+ .b-filter__power-title {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 7px;
+    
+
+ }
+
 
  .b-filter__slider {
      width: 220px;
@@ -1690,19 +1772,109 @@ text-decoration: none;
  .b-filter__brands,
  .b-power-options {
      list-style: none;
-     padding:0;
+     padding-left:30px;
+     
  }
 
- .b-filter__brand, .b-filter__brand-power {
+ .b-filter__brands {
+     margin-top:0;
+
+ }
+
+ .b-filter__brands label,
+ .b-power-options label {
+    position: relative;
+  
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+
+ .b-filter__brand,
+ .b-filter__brand-power,
+ .b-filter__item {
      text-transform: uppercase;
+ }
+
+ .b-filter__item {
+    padding-bottom: 20px;
+    padding-left: 3px;
+ }
+
+ .b-filter__option,
+ .b-filter__power-options {
+     display: none;
+ }
+
+ .b-filter__item:last-child {
+    padding-bottom: 0;
+}
+
+ .b-filter__option:checked ~ label::before {
+    content: url("../img/checkbox-on.svg");
+    
+ }
+
+ .b-filter__option:disabled ~ label {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+ .b-filter__brands label::before {
+    position: absolute;
+    top: 0;
+    left: -33px;
+    z-index: 1;
+    width: 1px;
+    height: 1px;
+    content: url("../img/checkbox-off.svg");
+ }
+
+ .b-filter__power-options:checked ~ label::before {
+    content: url("../img/radio-on.svg");
+    
+ }
+ 
+ .b-filter__line {
+    width: 100%;
+    color: #e5e5e5;
+    margin-top: 0;
+    margin-bottom: 15px;
+ }
+
+ .b-power-options label::before {
+    position: absolute;
+    top: 0;
+    left: -33px;
+    z-index: 1;
+    width: 1px;
+    height: 1px;
+    content: url("../img/radio-off.svg");
+ }
+
+ .b-power__item {
+    padding-bottom: 15px;
+
+padding-left: 3px;
+
+padding-top: 5px;
+ }
+
+ .b-power-options {
+     margin:0;
+     margin-top: 8px;
  }
 
  .b-filter__btn {
-     text-transform: uppercase;
-     background-color: #ffffff;
-     border: 1px solid #e5e5e5;
-     padding: 10px 40px;
-     border-radius: 3px;
+    width: 140px;
+    padding: 9px 0;
+    margin-top: 58px;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    background-color: #fff;
+    text-transform: uppercase;
  }
 
  .b-sort {
@@ -1811,10 +1983,11 @@ text-decoration: none;
      color: #000000;
      padding-left: 20px;
      padding-right: 20px;
+     margin-top: 3px;
  }
 
  .catalog__title--new {
-     margin-bottom: 45px;
+     margin-bottom: 41px;
  }
 
  .b-catalog__old-price {
@@ -1822,7 +1995,8 @@ text-decoration: none;
      font-weight: bold;
      color: #999999;
      text-decoration: line-through;
-     margin-bottom: 7px;
+     margin-bottom: 9px;
+     margin-top: 12px;
  }
 
  /* .b-catalog__new-price {

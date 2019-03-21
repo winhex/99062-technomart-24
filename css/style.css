@@ -214,6 +214,7 @@
  .b-search {
      overflow: hidden;
      position: relative;
+     width: 267px;
  }
 
  .b-search-input {
@@ -547,6 +548,11 @@
      -webkit-box-pack: justify;
          -ms-flex-pack: justify;
              justify-content: space-between;
+ }
+
+ 
+ _:-ms-fullscreen, :root .b-goods-top {
+     margin-left:-18px;
  }
 
  .b-goods-right {
@@ -883,7 +889,13 @@
              justify-content: space-between;
      padding: 0;
      flex-wrap: wrap;
+     margin-bottom: 4px;
  }
+
+ .b-popular__list::after {
+    content: "";
+    margin-right: 49%;
+}
 
  
 
@@ -933,7 +945,7 @@
 
  .b-popular__form-hidden, .b-hidden-form {
      display: none;
-     margin-bottom: 36px;
+     margin-bottom: 42px;
      margin-top: 42px;
      margin-left: 41px;
      margin-right: 41px;
@@ -1024,7 +1036,7 @@
      -webkit-box-align: center;
          -ms-flex-align: center;
              align-items: center;
-     padding-top: 11px;
+     padding-top: 25px;
      padding-bottom: 25px;
      padding-left: 30px;
      padding-right: 24px;
@@ -1078,6 +1090,11 @@
              justify-content: space-between;
  }
 
+ .b-brands__list::after {
+    content: "";
+    margin-right: 49%;
+}
+
  .b-brands__item {
      display: -webkit-box;
      display: -ms-flexbox;
@@ -1111,6 +1128,13 @@
      /* padding-bottom: 99px; */
      min-width: 261px;
  }
+
+ /* @-moz-document url-prefix()
+{
+    .service-list {
+        margin-top: 26px;
+    }
+} */
 
  .b-service {
      width: 100%;
@@ -1272,7 +1296,7 @@
      -webkit-box-pack: justify;
          -ms-flex-pack: justify;
              justify-content: space-between;
-     padding-top: 56px;
+     padding-top: 45px;
      padding-bottom: 86px;
  }
 
@@ -1492,7 +1516,7 @@
      color: #f1f5f7;
      font-style: normal;
      margin: 0;
-     width: 322px;
+     width: 330px;
  }
 
  .b-contacts__phone {
@@ -1562,7 +1586,7 @@
      display: -ms-flexbox;
      display: flex;
      list-style: none;
-     padding-left: 30px;
+     padding-left: 27px;
  }
 
  .b-social-link {
@@ -1612,7 +1636,7 @@
      -webkit-box-pack: justify;
          -ms-flex-pack: justify;
              justify-content: space-between;
-     margin-left: 72px;
+     margin-left: 77px;
      
  }
 
@@ -2127,6 +2151,11 @@
      margin-top: 0;
  }
 
+ .b-catalog__list::after {
+    content: "";
+    margin-right: 31%;
+}
+
  .b-catalog__item {
      width: 220px;
      height: 318px;
@@ -2156,6 +2185,7 @@
      padding-left: 20px;
      padding-right: 20px;
      margin-top: 3px;
+     width:200px;
  }
 
  .catalog__title--new {

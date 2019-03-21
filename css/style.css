@@ -925,12 +925,14 @@
      display: block;
      position: absolute;
      top: 0;
-     left: 0;
+     /* left: 0; */
      right: 0;
      bottom: 0;
      background-image: url("../img/new-flag.png");
      background-repeat: no-repeat;
      background-position: right top;
+     width: 60px;
+    height: 60px;
  }
 
  .popular__title--new {
@@ -943,7 +945,7 @@
      border: 1px solid transparent;
  }
 
- .b-popular__form-hidden, .b-hidden-form {
+ .b-popular__form-hidden {
      display: none;
      margin-bottom: 42px;
      margin-top: 42px;
@@ -951,6 +953,22 @@
      margin-right: 41px;
  }
 
+ @-moz-document url-prefix()
+{
+    .hidden--main {
+        margin-bottom: 41px;
+    }
+ 
+ 
+
+ .b-hidden-form {
+    
+    display: none;
+     margin-bottom: 39px;
+     margin-top: 42px;
+     margin-left: 41px;
+     margin-right: 41px;
+ }
  .b-popular__item:hover .b-popular__form-hidden, .b-catalog__item:hover .b-hidden-form {
      display: block;
      -webkit-box-ordinal-group: 0;
@@ -1129,12 +1147,7 @@
      min-width: 261px;
  }
 
- /* @-moz-document url-prefix()
-{
-    .service-list {
-        margin-top: 26px;
-    }
-} */
+ 
 
  .b-service {
      width: 100%;
@@ -1296,9 +1309,15 @@
      -webkit-box-pack: justify;
          -ms-flex-pack: justify;
              justify-content: space-between;
-     padding-top: 45px;
+     padding-top: 42px;
      padding-bottom: 86px;
  }
+
+ @-moz-document url-prefix() {
+    .about-content {
+        padding-top: 56px;
+    }
+  }
 
  .b-about {
      width: 519px;
@@ -1321,11 +1340,15 @@
      color: #000000;
  }
 
+ .second--merit {
+    width: 400px;
+ }
  
 
  .b-about__partners {
      list-style: none;
      margin-bottom: 40px;
+     margin-left: -4px;
  }
 
  .b-about__item {
@@ -1349,9 +1372,9 @@
  .b-about__btn {
      width: 220px;
      padding-top: 11px;
-     padding-right: 35px;
+     padding-right: 37px;
      padding-bottom: 10px;
-     padding-left: 45px;
+     padding-left: 42px;
      color: #ffffff;
      font-size: 14px;
      line-height: 18px;
@@ -1399,12 +1422,18 @@
  }
 
  .b-contacts__text {
-     margin-bottom: 61px;
+     margin-bottom: 36px;
      font-family: "PT Sans", Arial, sans-serif;
      font-size: 13px;
      line-height: 24px;
      color: #000000;
+     width: 200px;
  }
+
+ 
+
+
+
 
  .b-contacts__btn {
      display: block;

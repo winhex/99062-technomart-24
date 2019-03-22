@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="b-inner-page">
@@ -179,14 +179,14 @@
           </div>
           <div class="b-filter__price">
             <label>
-              <input class="b-price__range" id="min-value"  type="text" name="min-price" value="0">
+              <input class="b-price__range" id="min-value"  type="text" name="min-price" value="0" tabindex="">
             </label>
             
             <span class="b-price__line">
-              —
+              &#8212;
             </span>
             <label>
-              <input class="b-price__range" id="max-value"  type="text" name="max-price" value="30000">
+              <input class="b-price__range" id="max-value"  type="text" name="max-price" value="30000" tabindex="">
             </label>
             
           </div>
@@ -196,23 +196,23 @@
             </legend>
             <ul class="b-filter__brands">
               <li class="b-filter__item">
-                <input class="b-filter__option" type="checkbox" name="Bosch" id="Bosch" checked>
+                <input class="b-filter__option" type="checkbox" name="Bosch" id="Bosch" tabindex="" checked>
                 <label for="Bosch">Bosch</label>
               </li>
               <li class="b-filter__item">
-                <input class="b-filter__option" type="checkbox" name="Interskol" id="Interskol">
+                <input class="b-filter__option" type="checkbox" name="Interskol" id="Interskol" tabindex="">
                 <label for="Interskol">Интерскол</label>
               </li>
               <li class="b-filter__item">
-                <input class="b-filter__option" type="checkbox" name="Makita" id="Makita" checked>
+                <input class="b-filter__option" type="checkbox" name="Makita" id="Makita" tabindex="" checked>
                 <label for="Makita">Makita</label>
               </li>
               <li class="b-filter__item">
-                <input class="b-filter__option" type="checkbox" name="Dewalt" id="Dewalt">
+                <input class="b-filter__option" type="checkbox" name="Dewalt" id="Dewalt" tabindex="">
                 <label for="Dewalt">Dewalt</label>
               </li>
               <li class="b-filter__item">
-                <input class="b-filter__option" type="checkbox" name="Hitachi" id="Hitachi">
+                <input class="b-filter__option" type="checkbox" name="Hitachi" id="Hitachi" tabindex="">
                 <label for="Hitachi">Hitachi</label>
               </li>
             </ul>
@@ -225,14 +225,14 @@
             </legend>
             <ul class="b-power-options">
               <li class="b-power__item">
-                <input class="b-filter__power-options" type="radio" name="brand-power" value="option-1" id="wireless">
+                <input class="b-filter__power-options" type="radio" name="brand-power" value="option-1" id="wireless" tabindex="" checked>
                 <label class="b-filter__brand-power" for="wireless">
                   Аккумуляторные
 
                 </label>
               </li>
               <li class="b-power__item">
-                <input class="b-filter__power-options" type="radio" name="brand-power" value="option-2" id="wired">
+                <input class="b-filter__power-options" type="radio" name="brand-power" value="option-2" id="wired" tabindex="">
                 <label class="b-filter__brand-power" for="wired">
                   Сетевые
                 </label>
@@ -241,7 +241,7 @@
 
           
           </fieldset>
-          <button class="b-filter__btn" type="submit">
+          <button class="b-filter__btn" type="submit" tabindex="">
             Показать
           </button>
         </form>
@@ -629,17 +629,20 @@
 
         <ul class="b-social-list">
           <li class="b-social-item">
-            <a class="b-social-link social-link--vk" alt="Вконтакте" title="Вконтакте" href="#">
+            <a class="b-social-link social-link--vk"  title="Вконтакте" href="#">
+              <span class="visually-hidden "> Вконтакте</span>
 
             </a>
           </li>
           <li class="b-social-item">
-            <a class="b-social-link social-link--fb" alt="Фейсбук" title="Фейсбук" href="#">
+            <a class="b-social-link social-link--fb" title="Фейсбук" href="#">
+                <span class="visually-hidden ">Фейсбук </span>
 
             </a>
           </li>
           <li class="b-social-item">
-            <a class="b-social-link social-link--instagram" alt="Инстаграм" title="Инстаграм" href="#">
+            <a class="b-social-link social-link--instagram"  title="Инстаграм" href="#">
+                <span class="visually-hidden ">Инстаграм </span>
 
             </a>
           </li>

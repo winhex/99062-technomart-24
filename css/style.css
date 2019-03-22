@@ -464,6 +464,12 @@
 
 .b-nav__item:hover, .b-nav__item:focus {
     background-color: #293449;
+    
+}
+
+.b-nav__item:active {
+    opacity: 0.4;
+    background-color: #1d2739;
 }
 
 .b-nav__item:first-child .b-nav__link {
@@ -513,8 +519,8 @@
 .b-user-area__btn:before {
     content: "";
     position: absolute;
-    top: 13px;
-    left: 10px;
+    top: 14px;
+    left: 13px;
     width: 20px;
     height: 18px;
     background-image: url("../img/icon-user.svg");
@@ -740,7 +746,7 @@ _:-ms-fullscreen, :root .b-goods-top {
 }
 
 .round--active::after {
-   content: '';
+   content: "";
    position: absolute;
    display: block;
    background-color: #ee3643;
@@ -811,7 +817,7 @@ _:-ms-fullscreen, :root .b-goods-top {
     font-size: 18px;
     line-height: 20px;
     color: #000000;
-    margin-top: 9px;
+    margin-top: 8px;
     width: 160px;
     /* text-transform: uppercase; */
     text-decoration: none;
@@ -909,14 +915,14 @@ _:-ms-fullscreen, :root .b-goods-top {
     margin-bottom: 4px;
 }
 
-.b-popular__list::after {
+/* .b-popular__list::after {
    content: "";
    margin-right: 49%;
 }
 
 _:-ms-fullscreen, :root .b-popular__list {
     margin-right:-19px;
-}
+} */
 
 .b-popular__item {
     display: -webkit-box;
@@ -1034,7 +1040,9 @@ _:-ms-fullscreen, :root .b-popular__list {
     background-color: #5fbb2d;
 }
 
-
+.b-popular__form-btn:active, .b-hidden-form__buy:active {
+    background-color: #518534;
+}
 
 .b-popular__bookmark-btn, .b-hidden-form__bookmark {
     color: #32425c;
@@ -1121,6 +1129,7 @@ _:-ms-fullscreen, :root .b-popular__list {
         flex-wrap: wrap;
     list-style: none;
     margin-top: 20px;
+    margin-bottom: 66px;
     padding: 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1190,7 +1199,7 @@ _:-ms-fullscreen, :root .b-brands__list::after {
     width: 100%;
     background-color: #f4f7f9;
     font-family: "Cuprum", Arial, sans-serif;
-    padding-top: 90px;
+    padding-top: 41px;
 }
 
 .b-service__slide {
@@ -1346,13 +1355,13 @@ _:-ms-fullscreen, :root .b-brands__list::after {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-top: 42px;
+    padding-top: 44px;
     padding-bottom: 86px;
 }
 
 @-moz-document url-prefix() {
    .about-content {
-       padding-top: 56px;
+       padding-top: 57px;
    }
  }
 
@@ -1422,6 +1431,16 @@ _:-ms-fullscreen, :root .b-brands__list::after {
     border: none;
     border-radius: 3px;
     background-color: #ee3643;
+}
+
+.b-about__btn:hover,
+.b-contacts__btn:hover {
+    background-color:#ca2c37;
+}
+
+.b-about__btn:active,
+.b-contacts__btn:active {
+    background-color: #ba2732;
 }
 
 /*                                                               о компании */
@@ -1732,8 +1751,12 @@ padding-right: 40px;
 
 .b-feedback__link:active {
     color:#ee3643;
+    text-decoration: none;
 }
 
+.b-feedback__link:hover {
+    text-decoration: underline;
+}
 
 .feedback--mail {
     padding-right: 50px;
@@ -1972,7 +1995,7 @@ padding-right: 40px;
     font-weight: bold;
     text-transform: uppercase;
     color: #000000;
-    margin-top: 27px;
+    /* margin-top: 27px; */
     margin-bottom: 13px;
 }
 
@@ -2100,6 +2123,14 @@ padding-right: 40px;
     color: #e5e5e5;
     margin-top: 0;
     margin-bottom: 15px;
+}
+
+@-moz-document url-prefix()
+{
+    .b-filter__line {
+        margin-bottom: 10px;
+   }
+
 }
 
 .b-power-options label::before {
@@ -2256,10 +2287,10 @@ padding-right: 40px;
     margin-top: 0;
 }
 
-.b-catalog__list::after {
+/* .b-catalog__list::after {
    content: "";
    margin-right: 31%;
-}
+} */
 
 .b-catalog__item {
     width: 220px;
